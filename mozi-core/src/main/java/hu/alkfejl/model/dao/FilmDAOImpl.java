@@ -6,6 +6,8 @@ import java.util.ArrayList;
 
 public class FilmDAOImpl implements FilmDAO {
 
+    private final static String DB_STRING = "jdbc:sqlite:mozi.db";
+
     @Override
     public ArrayList<Film> getFilmek() {
         ArrayList<Film> filmek = new ArrayList<>();
