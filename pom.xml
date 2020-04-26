@@ -7,6 +7,7 @@
     <modules>
         <module>mozi-core</module>
         <module>mozi-web</module>
+        <module>mozi-fx</module>
     </modules>
     <groupId>hu.alkfejl</groupId>
     <artifactId>mozi</artifactId>
