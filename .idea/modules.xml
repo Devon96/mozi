@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/mozi.iml" filepath="$PROJECT_DIR$/mozi.iml" />
       <module fileurl="file://$PROJECT_DIR$/mozi-core/mozi-core.iml" filepath="$PROJECT_DIR$/mozi-core/mozi-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mozi-fx/mozi-fx.iml" filepath="$PROJECT_DIR$/mozi-fx/mozi-fx.iml" />
       <module fileurl="file://$PROJECT_DIR$/mozi-web/mozi-web.iml" filepath="$PROJECT_DIR$/mozi-web/mozi-web.iml" />
     </modules>
   </component>

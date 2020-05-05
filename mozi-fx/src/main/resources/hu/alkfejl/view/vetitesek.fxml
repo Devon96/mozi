@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.alkfejl.view.controller.VetitesekController">
    <children>
-      <BorderPane prefHeight="400.0" prefWidth="600.0">
+      <BorderPane prefHeight="400.0" prefWidth="642.0">
          <top>
             <MenuBar BorderPane.alignment="CENTER">
               <menus>
@@ -17,6 +18,33 @@
               </menus>
             </MenuBar>
          </top>
+         <center>
+            <TableView fx:id="tabla" prefHeight="375.0" prefWidth="638.0" BorderPane.alignment="CENTER">
+              <columns>
+                <TableColumn fx:id="cimCol" maxWidth="220.0" minWidth="220.0" prefWidth="220.0" text="Filmcím" />
+                <TableColumn fx:id="teremCol" maxWidth="120.0" minWidth="120.0" prefWidth="120.0" text="Terem" />
+                  <TableColumn fx:id="idoCol" maxWidth="140.0" minWidth="140.0" prefWidth="140.0" text="Időpint" />
+                  <TableColumn fx:id="torolCol" maxWidth="80.0" minWidth="80.0" text="Törlés" />
+                  <TableColumn fx:id="szerkesztCol" maxWidth="80.0" minWidth="80.0" text="Szerkesztés" />
+              </columns>
+            </TableView>
+         </center>
+         <bottom>
+            <ButtonBar prefHeight="55.0" prefWidth="642.0" BorderPane.alignment="CENTER">
+              <buttons>
+                <Button mnemonicParsing="false" text="Hozzáad">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding></Button>
+              </buttons>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </ButtonBar>
+         </bottom>
       </BorderPane>
    </children>
 </AnchorPane>

@@ -18,17 +18,23 @@ public class App extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         this.stage = stage;
-        Parent root = FXMLLoader.load(getClass().getResource("/hu/alkfejl/view/primary.fxml"));
-        scene = new Scene(root);
+        changeScene("primary");
         stage.setTitle("Mozi");
         stage.setScene(scene);
         stage.show();
     }
 
-     public static void changeScene(String str) throws IOException {
-         Parent root = FXMLLoader.load(App.class.getResource("/hu/alkfejl/view/"+str+".fxml"));
-         scene = new Scene(root);
-         stage.setScene(scene);
+     public static void changeScene(String str){
+         try{
+             Parent root = FXMLLoader.load(App.class.getResource("/hu/alkfejl/view/"+str+".fxml"));
+             scene = new Scene(root);
+             stage.setScene(scene);
+             stage.setResizable(false);
+         }catch (Exception e){
+            System.out.println("HIBA az fxmlLoaderrel");
+         }
+
+
      }
 
 

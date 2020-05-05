@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="491.0" prefWidth="680.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.alkfejl.view.controller.FilmSzerkesztController">
+   <children>
+      <SplitPane dividerPositions="0.40468227424749165" prefHeight="491.0" prefWidth="680.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="435.0" prefWidth="323.0">
+               <children>
+                  <VBox alignment="TOP_CENTER" layoutX="4.0" layoutY="-3.0" prefHeight="491.0" prefWidth="271.0">
+                     <children>
+                        <ImageView fx:id="imageView" fitHeight="334.0" fitWidth="234.0" pickOnBounds="true" preserveRatio="true">
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </ImageView>
+                        <Button alignment="TOP_CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#kepFeltolt" prefHeight="25.0" prefWidth="108.0" text="Kép feltöltése" textOverrun="CENTER_ELLIPSIS">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <VBox.margin>
+                              <Insets top="30.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="489.0" prefWidth="396.0">
+               <children>
+                  <VBox alignment="TOP_CENTER" prefHeight="489.0" prefWidth="383.0" spacing="10.0">
+                     <children>
+                        <Label text="Cím:" />
+                        <TextField fx:id="cim" maxWidth="300.0" minWidth="300.0" prefWidth="300.0" />
+                        <Label text="Színészek:" />
+                        <HBox prefHeight="36.0" prefWidth="383.0" spacing="20.0">
+                           <children>
+                              <TextField fx:id="szinesz" prefHeight="29.0" prefWidth="190.0" promptText="Színész neve" />
+                              <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#addSzinesz" prefHeight="29.0" prefWidth="83.0" text="Hozzáad">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                        </HBox>
+                        <TableView fx:id="tabla" prefHeight="114.0" prefWidth="383.0">
+                          <columns>
+                            <TableColumn fx:id="nevCol" maxWidth="250.0" minWidth="250.0" prefWidth="250.0" text="Név" />
+                            <TableColumn fx:id="torolCol" maxWidth="125.0" minWidth="125.0" prefWidth="125.0" text="Törlés" />
+                          </columns>
+                        </TableView>
+                        <HBox alignment="CENTER_LEFT" prefHeight="39.0" prefWidth="383.0" spacing="20.0">
+                           <children>
+                              <Label text="Korhatár:" />
+                              <ComboBox fx:id="korhatar" prefHeight="25.0" prefWidth="86.0" />
+                              <Label text="Hossz:" />
+                              <Spinner fx:id="hossz" prefHeight="25.0" prefWidth="75.0" />
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <VBox.margin>
+                              <Insets left="20.0" right="20.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <TextArea fx:id="leiras" prefHeight="62.0" prefWidth="383.0" />
+                        <Label text="Rendező:" />
+                        <TextField fx:id="rendezo" maxWidth="300.0" minWidth="300.0" prefHeight="30.0" prefWidth="300.0" />
+                        <ButtonBar prefHeight="50.0" prefWidth="383.0">
+                          <buttons>
+                            <Button fx:id="btn3" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#filmSzerkeszt" text="Módosít" visible="false" />
+                              <Button fx:id="btn2" mnemonicParsing="false" onAction="#megse" text="Mégse" />
+                              <Button fx:id="btn1" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#filmFeltolt" text="Hozzáad" />
+                          </buttons>
+                           <padding>
+                              <Insets left="50.0" right="50.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </ButtonBar>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </VBox>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

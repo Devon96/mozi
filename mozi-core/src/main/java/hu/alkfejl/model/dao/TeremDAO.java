@@ -8,5 +8,9 @@ import java.util.ArrayList;
 public interface TeremDAO {
 
     ArrayList<Terem> getTermek();
-    boolean addFilm(Terem terem);
+
+    void createTabla();
+    boolean add(Terem t);
+
+    boolean torol(String str);
 }

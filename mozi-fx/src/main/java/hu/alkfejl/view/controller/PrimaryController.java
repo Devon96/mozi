@@ -17,15 +17,15 @@ public class PrimaryController implements Initializable {
     Parent root = null;
 
     @FXML
-    private void termek() throws IOException {
+    private void termek() {
         App.changeScene("termek");
     }
     @FXML
-    private void filmek() throws IOException {
+    private void filmek() {
         App.changeScene("filmek");
     }
     @FXML
-    private void vetitesek() throws IOException {
+    private void vetitesek() {
         App.changeScene("vetitesek");
     }
 

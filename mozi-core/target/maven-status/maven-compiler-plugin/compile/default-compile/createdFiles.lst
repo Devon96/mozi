@@ -1,0 +1,10 @@
+hu\alkfejl\model\bean\Szinesz.class
+hu\alkfejl\model\dao\TeremDAO.class
+hu\alkfejl\model\dao\FilmDAOImpl.class
+hu\alkfejl\model\dao\VetitesDAO.class
+hu\alkfejl\model\bean\Vetites.class
+hu\alkfejl\model\bean\Terem.class
+hu\alkfejl\model\dao\TeremDAOImpl.class
+hu\alkfejl\model\dao\VetitesDAOImpl.class
+hu\alkfejl\model\bean\Film.class
+hu\alkfejl\model\dao\FilmDAO.class

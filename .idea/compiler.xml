@@ -6,13 +6,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="mozi-web" />
         <module name="mozi-core" />
+        <module name="mozi-fx" />
+        <module name="mozi-web" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="mozi" target="11" />
       <module name="mozi-core" target="11" />
+      <module name="mozi-fx" target="11" />
       <module name="mozi-web" target="11" />
     </bytecodeTargetLevel>
   </component>

@@ -15,7 +15,8 @@
                      </items></Menu>
                 <Menu mnemonicParsing="false" text="Szerkesztés">
                   <items>
-                        <MenuItem mnemonicParsing="false" text="Unspecified Action" />
+                        <MenuItem mnemonicParsing="false" onAction="#addTerem" text="Terem hozzáadása" />
+                        <MenuItem mnemonicParsing="false" onAction="#torol" text="Töröl" />
                   </items>
                 </Menu>
               </menus>

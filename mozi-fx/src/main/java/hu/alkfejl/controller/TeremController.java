@@ -1,15 +1,15 @@
 package hu.alkfejl.controller;
-/*
+
 import hu.alkfejl.model.bean.Terem;
 import hu.alkfejl.model.dao.TeremDAO;
-import hu.alkfejl.model.dao.TeremDAOImpl;*/
+import hu.alkfejl.model.dao.TeremDAOImpl;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class TeremController {
 
-    //private TeremDAO dao = new TeremDAOImpl();
+    private TeremDAO dao = new TeremDAOImpl();
     private static TeremController single_instance = null;
 
     private TeremController(){
@@ -23,15 +23,18 @@ public class TeremController {
         return single_instance;
     }
 
-    /*public List<Terem> getAll() {
-        ArrayList<Terem> list = new ArrayList<>();
-        list.add(new Terem("J1", 40, 20));
-        list.add(new Terem("J2", 27, 15));
-        list.add(new Terem("B1", 30, 42));
+    public boolean addTerem(Terem t){
+        return dao.add(t);
+    }
 
+    public List<Terem> getAll() {
 
+        dao.createTabla();
 
-        return list;
-        return null;
-    }*/
+        return dao.getTermek();
+    }
+    public boolean torol(String str){
+        return dao.torol(str);
+    }
+
 }
