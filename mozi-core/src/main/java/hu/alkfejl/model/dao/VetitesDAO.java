@@ -9,4 +9,6 @@ public interface VetitesDAO {
     ArrayList<Vetites> getVetitesek();
     boolean addVetites(Vetites vetites);
     boolean updateVetites(Vetites vetites);
+    boolean deleteVetites(Vetites vetites);
+    void createTabla();
 }

@@ -5,29 +5,33 @@ import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 
-import java.util.Date;
 
 public class Vetites {
     private IntegerProperty id = new SimpleIntegerProperty();
     private StringProperty cim = new SimpleStringProperty();
     private IntegerProperty filmid = new SimpleIntegerProperty();
     private StringProperty terem = new SimpleStringProperty();
-    private Date datum;
-
+    private StringProperty datum = new SimpleStringProperty();
 
     public Vetites() { }
 
-    public Vetites(StringProperty terem, IntegerProperty filmid, Date datum) {
+    public Vetites(StringProperty terem, IntegerProperty filmid, StringProperty datum) {
         this.terem = terem;
         this.datum = datum;
         this.filmid = filmid;
     }
 
-    public Vetites(int id, String cim, int filmid, String terem, Date datum) {
+    public Vetites(int id, String cim, int filmid, String terem, String datum) {
         this.id.set(id);
         this.cim.set(cim);
         this.terem.set(terem);
-        this.datum = datum;
+        this.datum.set(datum);
+        this.filmid.set(filmid);
+    }
+
+    public Vetites(int filmid, String terem, String datum) {
+        this.terem.set(terem);
+        this.datum.set(datum);
         this.filmid.set(filmid);
     }
 
@@ -77,12 +81,12 @@ public class Vetites {
         this.terem.set(terem);
     }
 
-    public Date getDatum() {
-        return datum;
+    public String getDatum() {
+        return datum.get();
     }
 
-    public void setDatum(Date datum) {
-        this.datum = datum;
+    public void setDatum(String datum) {
+        this.datum.set(datum);
     }
 
     public int getFilmid() {

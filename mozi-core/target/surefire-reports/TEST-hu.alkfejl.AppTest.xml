@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="hu.alkfejl.AppTest" time="0.035" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="hu.alkfejl.AppTest" time="0.041" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -17,7 +17,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="HU"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11.0.1\bin"/>
-    <property name="sun.java.command" value="C:\Users\Devon\AppData\Local\Temp\surefire1844440818362425549\surefirebooter7869313951280657601.jar C:\Users\Devon\AppData\Local\Temp\surefire1844440818362425549 2020-05-05T16-56-48_704-jvmRun1 surefire13052858705415899607tmp surefire_014263732745017163268tmp"/>
+    <property name="sun.java.command" value="C:\Users\Devon\AppData\Local\Temp\surefire10990428265281040240\surefirebooter18264072598610624269.jar C:\Users\Devon\AppData\Local\Temp\surefire10990428265281040240 2020-05-06T04-03-52_540-jvmRun1 surefire449064833949157353tmp surefire_018010147362069704777tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\Devon\Desktop\4. félév\Alkalmazasfejlesztes\Projekt\mozi\mozi-core\target\test-classes;C:\Users\Devon\Desktop\4. félév\Alkalmazasfejlesztes\Projekt\mozi\mozi-core\target\classes;C:\Users\Devon\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\Devon\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Devon\.m2\repository\org\openjfx\javafx-base\14-ea+8\javafx-base-14-ea+8.jar;C:\Users\Devon\.m2\repository\org\openjfx\javafx-base\14-ea+8\javafx-base-14-ea+8-win.jar;C:\Users\Devon\.m2\repository\org\xerial\sqlite-jdbc\3.30.1\sqlite-jdbc-3.30.1.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -33,7 +33,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\Devon\AppData\Local\Temp\surefire1844440818362425549\surefirebooter7869313951280657601.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Devon\AppData\Local\Temp\surefire10990428265281040240\surefirebooter18264072598610624269.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.1+13-LTS"/>
@@ -61,5 +61,5 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="shouldAnswerWithTrue" classname="hu.alkfejl.AppTest" time="0.001"/>
+  <testcase name="shouldAnswerWithTrue" classname="hu.alkfejl.AppTest" time="0.003"/>
 </testsuite>
