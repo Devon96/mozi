@@ -31,7 +31,8 @@ public class App extends Application {
              stage.setScene(scene);
              stage.setResizable(false);
          }catch (Exception e){
-            System.out.println("HIBA az fxmlLoaderrel");
+             e.printStackTrace();
+                System.out.println("HIBA az fxmlLoaderrel");
          }
 
 

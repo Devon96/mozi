@@ -28,6 +28,10 @@ public class PrimaryController implements Initializable {
     private void vetitesek() {
         App.changeScene("vetitesek");
     }
+    @FXML
+    private void foglalasok() {
+        App.changeScene("foglalas");
+    }
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {

@@ -7,12 +7,15 @@ hu\alkfejl\view\controller\FilmSzerkesztController$2.class
 hu\alkfejl\view\controller\TeremController.class
 hu\alkfejl\view\controller\VetitesSzerkesztHozzaadController.class
 hu\alkfejl\view\controller\FilmekController.class
+hu\alkfejl\view\controller\FoglalasokController.class
 hu\alkfejl\view\controller\TeremTorolController.class
 hu\alkfejl\App.class
 hu\alkfejl\controller\TeremController.class
 hu\alkfejl\view\controller\VetitesekController$2.class
 hu\alkfejl\utils\Utils.class
 hu\alkfejl\view\controller\FilmSzerkesztController.class
+hu\alkfejl\controller\FoglalasController.class
 hu\alkfejl\view\controller\AddTeremController.class
 hu\alkfejl\view\controller\FilmSzerkesztController$1.class
 hu\alkfejl\view\controller\FilmekController$1.class
+hu\alkfejl\view\controller\FoglalasokController$1.class
