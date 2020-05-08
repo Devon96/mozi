@@ -3,6 +3,7 @@ hu\alkfejl\model\dao\VetitesDAO.class
 hu\alkfejl\model\bean\Vetites.class
 hu\alkfejl\model\dao\TeremDAOImpl.class
 hu\alkfejl\model\dao\VetitesDAOImpl.class
+hu\alkfejl\config\DBConfig.class
 hu\alkfejl\model\bean\Foglalas.class
 hu\alkfejl\model\dao\FoglalasDAO.class
 hu\alkfejl\model\bean\Szinesz.class

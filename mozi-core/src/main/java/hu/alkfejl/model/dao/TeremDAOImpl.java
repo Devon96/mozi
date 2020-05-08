@@ -1,5 +1,6 @@
 package hu.alkfejl.model.dao;
 
+import hu.alkfejl.config.DBConfig;
 import hu.alkfejl.model.bean.Terem;
 
 import java.sql.*;
@@ -7,7 +8,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class TeremDAOImpl implements TeremDAO {
-    private final static String DB_STRING = "jdbc:sqlite:mozi.db";
+    private final static String DB_STRING = DBConfig.DB_CONN_STR;
+
+    public TeremDAOImpl(){
+        try {
+            Class.forName("org.sqlite.JDBC");
+        } catch (ClassNotFoundException e) {
+            System.err.println("Nem sikerult betolteni a JDBC drivert");
+            e.printStackTrace();
+        }
+    }
 
 
     @Override

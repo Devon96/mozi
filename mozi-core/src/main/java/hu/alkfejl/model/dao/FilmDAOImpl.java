@@ -1,5 +1,6 @@
 package hu.alkfejl.model.dao;
 
+import hu.alkfejl.config.DBConfig;
 import hu.alkfejl.model.bean.Film;
 import hu.alkfejl.model.bean.Szinesz;
 import hu.alkfejl.model.bean.Terem;
@@ -9,7 +10,15 @@ import java.util.ArrayList;
 
 public class FilmDAOImpl implements FilmDAO {
 
-    private final static String DB_STRING = "jdbc:sqlite:mozi.db";
+    private final static String DB_STRING = DBConfig.DB_CONN_STR;
+
+    public FilmDAOImpl(){
+        try {
+            Class.forName("org.sqlite.JDBC");
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
 
     @Override
     public ArrayList<Film> getFilmek() {

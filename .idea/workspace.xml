@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="mozi-web:war exploded" />
+      <artifact name="mozi-web:war" />
     </artifacts-to-build>
   </component>
   <component name="BranchesTreeState">
@@ -25,32 +25,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f9294bf0-b1d7-4cb4-b28b-5d31665be9aa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/mozi-core/src/main/java/hu/alkfejl/model/bean/Foglalas.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mozi-core/src/main/java/hu/alkfejl/model/dao/FoglalasDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mozi-core/src/main/java/hu/alkfejl/model/dao/FoglalasDAOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mozi-fx/src/main/java/hu/alkfejl/controller/FoglalasController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mozi-fx/src/main/java/hu/alkfejl/view/controller/FoglalasokController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mozi-fx/src/main/resources/hu/alkfejl/view/foglalas.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jsp_jsp_api_2_2_1_b03.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jstl_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mozi-core/src/main/java/hu/alkfejl/config/DBConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mozi-core/src/main/resources/db.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mozi.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/mozi_web_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/mozi_web_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-core/mozi-core.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-core/mozi-core.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-core/src/main/java/hu/alkfejl/model/dao/FilmDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-core/src/main/java/hu/alkfejl/model/dao/FilmDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-core/src/main/java/hu/alkfejl/model/dao/FoglalasDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-core/src/main/java/hu/alkfejl/model/dao/FoglalasDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-core/src/main/java/hu/alkfejl/model/dao/TeremDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-core/src/main/java/hu/alkfejl/model/dao/TeremDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-core/src/main/java/hu/alkfejl/model/dao/VetitesDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-core/src/main/java/hu/alkfejl/model/dao/VetitesDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-core/target/classes/hu/alkfejl/model/dao/FilmDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-core/target/classes/hu/alkfejl/model/dao/FilmDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-core/target/classes/hu/alkfejl/model/dao/FoglalasDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-core/target/classes/hu/alkfejl/model/dao/FoglalasDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-core/target/classes/hu/alkfejl/model/dao/TeremDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-core/target/classes/hu/alkfejl/model/dao/TeremDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-core/target/classes/hu/alkfejl/model/dao/VetitesDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-core/target/classes/hu/alkfejl/model/dao/VetitesDAOImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mozi-core/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-core/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mozi-core/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-core/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mozi-core/target/mozi-core-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-core/target/mozi-core-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mozi-core/target/surefire-reports/TEST-hu.alkfejl.AppTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-core/target/surefire-reports/TEST-hu.alkfejl.AppTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mozi-core/target/surefire-reports/hu.alkfejl.AppTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-core/target/surefire-reports/hu.alkfejl.AppTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mozi-fx/mozi.db" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-fx/mozi.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mozi-fx/src/main/java/hu/alkfejl/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-fx/src/main/java/hu/alkfejl/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mozi-fx/src/main/java/hu/alkfejl/view/controller/PrimaryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-fx/src/main/java/hu/alkfejl/view/controller/PrimaryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mozi-fx/src/main/resources/hu/alkfejl/view/primary.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-fx/src/main/resources/hu/alkfejl/view/primary.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mozi-fx/target/classes/hu/alkfejl/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-fx/target/classes/hu/alkfejl/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mozi-fx/target/classes/hu/alkfejl/view/controller/PrimaryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-fx/target/classes/hu/alkfejl/view/controller/PrimaryController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mozi-fx/target/classes/hu/alkfejl/view/primary.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-fx/target/classes/hu/alkfejl/view/primary.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mozi-fx/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-fx/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mozi-fx/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-fx/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mozi-fx/target/maven-status/maven-compiler-plugin/compile/null/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mozi-fx/target/maven-status/maven-compiler-plugin/compile/null/inputFiles.lst" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/mozi-fx/target/mozi-fx-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-fx/target/mozi-fx-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-web/mozi-web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-web/mozi-web.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-web/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-web/src/main/java/MainServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-web/src/main/java/MainServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-web/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-web/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-web/target/classes/MainServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-web/target/classes/MainServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mozi-web/target/mozi-web.war" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-web/target/mozi-web.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-web/target/mozi-web/WEB-INF/classes/MainServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-web/target/mozi-web/WEB-INF/classes/MainServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mozi-web/target/mozi-web/WEB-INF/lib/mozi-core-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-web/target/mozi-web/WEB-INF/lib/mozi-core-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-web/target/mozi-web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-web/target/mozi-web/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +103,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Szavazat szamlalo/SzavazatSzamlalo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../javaWeb/03-person-administrator-jsp-delete-modify" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -112,11 +119,12 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Devon\Desktop\4. félév\Alkalmazasfejlesztes\Projekt\mozi\mozi-core\src\main\resources" />
       <recent name="C:\Users\Devon\Desktop\4. félév\Alkalmazasfejlesztes\Projekt\mozi\mozi-fx\src\main\java" />
       <recent name="C:\Users\Devon\Desktop\4. félév\Alkalmazasfejlesztes\Projekt\mozi\mozi-fx\src\main\resources\hu\alkfejl\view" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in mozi (3)">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.33">
     <configuration name="All in mozi (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mozi" />
       <option name="PACKAGE_NAME" value="" />
@@ -476,7 +484,7 @@
       <workItem from="1588803192318" duration="469000" />
       <workItem from="1588817222822" duration="3076000" />
       <workItem from="1588901198918" duration="5530000" />
-      <workItem from="1588935511914" duration="2286000" />
+      <workItem from="1588935511914" duration="16082000" />
     </task>
     <servers />
   </component>
@@ -503,18 +511,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="106" y="202" key="#Inspections/0.0.1920.1040@0.0.1920.1040" timestamp="1587985956871" />
-    <state x="26" y="189" key="#Project_Structure" timestamp="1588817571364">
+    <state x="26" y="189" key="#Project_Structure" timestamp="1588944275901">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="26" y="189" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1588817571364" />
+    <state x="26" y="189" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1588944275901" />
     <state x="738" y="417" key="#Tomcat_Server" timestamp="1587062166734">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="738" y="417" key="#Tomcat_Server/0.0.1920.1040@0.0.1920.1040" timestamp="1587062166734" />
-    <state x="758" y="245" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587063119641">
+    <state x="758" y="245" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588965794580">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="758" y="245" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587063119641" />
+    <state x="758" y="245" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588965794580" />
     <state x="1016" y="207" key="#com.intellij.ide.util.MemberChooser" timestamp="1588904567476">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -527,58 +535,62 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="941" y="270" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587814181609" />
-    <state x="938" y="288" key="FileChooserDialogImpl" timestamp="1588623217771">
+    <state x="938" y="288" key="FileChooserDialogImpl" timestamp="1588968277457">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="938" y="288" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1588623217771" />
-    <state width="1358" height="141" key="GridCell.Tab.0.bottom" timestamp="1588906743622">
+    <state x="938" y="288" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1588968277457" />
+    <state width="426" height="366" key="GridCell.Tab.0.bottom" timestamp="1588967805459">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1358" height="141" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588906743622" />
-    <state width="1358" height="141" key="GridCell.Tab.0.center" timestamp="1588906743621">
+    <state width="426" height="366" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588967805459" />
+    <state width="426" height="366" key="GridCell.Tab.0.center" timestamp="1588967805458">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1358" height="141" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588906743621" />
-    <state width="1358" height="141" key="GridCell.Tab.0.left" timestamp="1588906743621">
+    <state width="426" height="366" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588967805458" />
+    <state width="426" height="366" key="GridCell.Tab.0.left" timestamp="1588967805458">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1358" height="141" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588906743621" />
-    <state width="1358" height="141" key="GridCell.Tab.0.right" timestamp="1588906743621">
+    <state width="426" height="366" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588967805458" />
+    <state width="426" height="366" key="GridCell.Tab.0.right" timestamp="1588967805458">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1358" height="141" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588906743621" />
-    <state width="1809" height="369" key="GridCell.Tab.1.bottom" timestamp="1587858124059">
+    <state width="426" height="366" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588967805458" />
+    <state width="426" height="366" key="GridCell.Tab.1.bottom" timestamp="1588967805459">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1809" height="369" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587858124059" />
-    <state width="1809" height="369" key="GridCell.Tab.1.center" timestamp="1587858124059">
+    <state width="426" height="366" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588967805459" />
+    <state width="426" height="366" key="GridCell.Tab.1.center" timestamp="1588967805459">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1809" height="369" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587858124059" />
-    <state width="1809" height="369" key="GridCell.Tab.1.left" timestamp="1587858124059">
+    <state width="426" height="366" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588967805459" />
+    <state width="426" height="366" key="GridCell.Tab.1.left" timestamp="1588967805459">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1809" height="369" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587858124059" />
-    <state width="1809" height="369" key="GridCell.Tab.1.right" timestamp="1587858124059">
+    <state width="426" height="366" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588967805459" />
+    <state width="426" height="366" key="GridCell.Tab.1.right" timestamp="1588967805459">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1809" height="369" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587858124059" />
-    <state width="1809" height="369" key="GridCell.Tab.2.bottom" timestamp="1587858124060">
+    <state width="426" height="366" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588967805459" />
+    <state width="426" height="366" key="GridCell.Tab.2.bottom" timestamp="1588967805459">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1809" height="369" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587858124060" />
-    <state width="1809" height="369" key="GridCell.Tab.2.center" timestamp="1587858124059">
+    <state width="426" height="366" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588967805459" />
+    <state width="426" height="366" key="GridCell.Tab.2.center" timestamp="1588967805459">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1809" height="369" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587858124059" />
-    <state width="1809" height="369" key="GridCell.Tab.2.left" timestamp="1587858124059">
+    <state width="426" height="366" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588967805459" />
+    <state width="426" height="366" key="GridCell.Tab.2.left" timestamp="1588967805459">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1809" height="369" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587858124059" />
-    <state width="1809" height="369" key="GridCell.Tab.2.right" timestamp="1587858124060">
+    <state width="426" height="366" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588967805459" />
+    <state width="426" height="366" key="GridCell.Tab.2.right" timestamp="1588967805459">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1809" height="369" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587858124060" />
+    <state width="426" height="366" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588967805459" />
+    <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1588941309123">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1920.1040@0.0.1920.1040" timestamp="1588941309123" />
     <state x="141" y="178" key="Maven.ArtifactSearchDialog" timestamp="1588629278081">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

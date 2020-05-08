@@ -1,5 +1,6 @@
 package hu.alkfejl.model.dao;
 
+import hu.alkfejl.config.DBConfig;
 import hu.alkfejl.model.bean.Foglalas;
 
 import java.sql.*;
@@ -7,7 +8,17 @@ import java.util.ArrayList;
 
 public class FoglalasDAOImpl implements FoglalasDAO {
 
-    private final static String DB_STRING = "jdbc:sqlite:mozi.db";
+    private final static String DB_STRING = DBConfig.DB_CONN_STR;
+
+    public FoglalasDAOImpl(){
+        try {
+            Class.forName("org.sqlite.JDBC");
+        } catch (ClassNotFoundException e) {
+            System.err.println("Nem sikerult betolteni a JDBC drivert");
+            e.printStackTrace();
+        }
+    }
+
 
     @Override
     public ArrayList<Foglalas> getFoglalasok() {
