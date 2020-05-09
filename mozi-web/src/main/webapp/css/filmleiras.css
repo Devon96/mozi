@@ -1,0 +1,30 @@
+img{
+    margin: 0 0 0 80px;
+    width: 400px;
+}
+.film{
+    width: 1050px;
+    margin: 0 auto;
+}
+.kepdiv{
+    width: 500px;
+    float: left;
+}
+.adatok{
+    width: 550px;
+    text-align: left;
+    float: left;
+}
+h2{
+    margin: 5px;
+}
+h3{
+    margin: 5px
+}/*
+.vetites{
+    margin: 10px;
+    padding: 20px;
+    background-color: #000000;
+    color: aliceblue;
+
+}*/

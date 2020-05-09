@@ -1,20 +1,6 @@
-<html>
-<body>
-<%!
-    private static int counter = 0;
-%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 
 <%
-    if(request.getParameter("submit") != null){
-        counter++;
-    }
+    String redirectURL = "pages/filmek.jsp";
+    response.sendRedirect(redirectURL);
 %>
-
-<h1>Counter value: <%= counter %></h1>
-
-<form method="post" action="index.jsp">
-    <button type="submit" name="submit">Increment</button>
-</form>
-
-</body>
-</html>
