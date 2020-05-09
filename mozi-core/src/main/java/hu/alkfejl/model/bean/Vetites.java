@@ -35,6 +35,11 @@ public class Vetites {
         this.filmid.set(filmid);
     }
 
+    public Vetites(int id, String datum) {
+        this.datum.set(datum);
+        this.id.set(id);
+    }
+
     @Override
     public String toString() {
         return "Vetites{" +

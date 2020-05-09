@@ -121,6 +121,32 @@ public class FilmDAOImpl implements FilmDAO {
     }
 
     @Override
+    public Film getFilm(int id) {
+        try (Connection conn = DriverManager.getConnection(DB_STRING); PreparedStatement st = conn.prepareStatement("SELECT * FROM Film WHERE id = ?;")) {
+
+            st.setInt(1, id);
+            ResultSet rs = st.executeQuery();
+            if (rs.next()) {
+                Film f = new Film(
+                        rs.getInt(1),
+                        rs.getString(2),
+                        rs.getInt(4),
+                        rs.getString(3),
+                        rs.getString(6),
+                        rs.getInt(5),
+                        rs.getString(7)
+                );
+                return f;
+
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    @Override
     public boolean deleteSzinesz(Film film, Szinesz sz) {
         try (Connection conn = DriverManager.getConnection(DB_STRING); PreparedStatement st = conn.prepareStatement("DELETE FROM Szinesz WHERE id = ? AND nev = ?;")) {
             st.setInt(1, film.getId());

@@ -1,6 +1,7 @@
 package hu.alkfejl.model.dao;
 
 import hu.alkfejl.config.DBConfig;
+import hu.alkfejl.model.bean.Film;
 import hu.alkfejl.model.bean.Szinesz;
 import hu.alkfejl.model.bean.Vetites;
 import javafx.beans.property.IntegerProperty;
@@ -27,7 +28,6 @@ public class VetitesDAOImpl implements VetitesDAO {
     public ArrayList<Vetites> getVetitesek() {
         ArrayList<Vetites> vetitesek = new ArrayList<>();
 
-        // id, cim, filmid, terem, datum
 
         try (Connection conn = DriverManager.getConnection(DB_STRING); PreparedStatement st = conn.prepareStatement("SELECT Vetites.id, Film.cim, Film.id, terem, idopont FROM Vetites, Film, Terem WHERE Film.id = filmid AND Vetites.terem = Terem.nev;")) {
             ResultSet rs = st.executeQuery();
@@ -40,6 +40,23 @@ public class VetitesDAOImpl implements VetitesDAO {
         }
         return vetitesek;
 
+    }
+
+    @Override
+    public ArrayList<Vetites> getVetitesek(Film film) {
+        ArrayList<Vetites> vetitesek = new ArrayList<>();
+
+        try (Connection conn = DriverManager.getConnection(DB_STRING); PreparedStatement st = conn.prepareStatement("SELECT id, idopont FROM Vetites WHERE filmid = ?;")) {
+            st.setInt(1, film.getId());
+            ResultSet rs = st.executeQuery();
+            while (rs.next()) {
+                Vetites v = new Vetites(rs.getInt(1), rs.getString(2));
+                vetitesek.add(v);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return vetitesek;
     }
 
     @Override

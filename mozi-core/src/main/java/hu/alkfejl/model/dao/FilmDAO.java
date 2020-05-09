@@ -11,6 +11,7 @@ public interface FilmDAO {
     boolean addFilm(Film film, ArrayList<Szinesz> szineszek);
     boolean addSzinesz(Film film, Szinesz szinesz);
     void createTabla();
+    Film getFilm(int id);
 
     boolean deleteSzinesz(Film film, Szinesz sz);
 
