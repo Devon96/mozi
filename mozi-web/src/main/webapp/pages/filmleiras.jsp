@@ -45,11 +45,19 @@
 
 <br class="clear" />
 </div>
-<c:forEach var="item" items="${vetitesek}">
-        <span class="vetites">
-            <h4>${item.datum}</h4>
-        </span>
-</c:forEach>
-
+<div id="vetitesekspan"><h1 id="vetitesekcim" >Vetítések:</h1></div>
+<div id="vetitesek">
+    <c:forEach var="item" items="${vetitesek}">
+        <div class="vetitesekkilso">
+            <a href="/azonositas?vetitesId=${item.id}">
+                <div class="vetites">
+                        <h4>${item.datum}</h4>
+                </div>
+            </a>
+        </div>
+    </c:forEach>
+    <br clear="clear" />
+</div>
+    <br clear="clear" />
 </body>
 </html>

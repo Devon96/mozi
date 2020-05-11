@@ -1,0 +1,23 @@
+
+#terem{
+    width: 1000px;
+    margin: 5px auto;
+}
+.szek{
+    background-color: green;
+    border:  2px solid #555555;
+    float: left;
+    margin: 0px;
+}
+.UserFoglaltSzek{
+    background-color: blue;
+    border:  2px solid #555555;
+    float: left;
+    margin: 0px;
+}
+.foglaltSzek{
+    background-color: red;
+    border:  2px solid #555555;
+    float: left;
+    margin: 0px;
+}

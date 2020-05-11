@@ -20,11 +20,41 @@ h2{
 }
 h3{
     margin: 5px
-}/*
+}
 .vetites{
+    width: 180px;
+    font-size: 20px;
     margin: 10px;
-    padding: 20px;
-    background-color: #000000;
+    padding: 10px;
+    background-color: #222222;
     color: aliceblue;
+    text-align: center;
+    border-radius: 20px;
+}
+#vetitesek{
+    margin: 0 auto;
+    padding: 0 150px;
 
-}*/
+}
+
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+#vetitesek{
+    margin: 50px 0 0 0;
+    font-size: 50px;
+}
+#vetitesekspan{
+    text-align: center;
+    margin: 0 auto;
+
+}
+#vetitesekcim{
+    font-size: 80px;
+    margin: 50px 0 0 0;
+}
+.vetitesekkilso{
+    width: 220px;
+    float: left;
+}
