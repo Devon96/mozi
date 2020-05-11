@@ -1,6 +1,7 @@
 package hu.alkfejl.model.dao;
 
 import hu.alkfejl.config.DBConfig;
+import hu.alkfejl.model.bean.Foglalas;
 import hu.alkfejl.model.bean.Terem;
 
 import java.sql.*;
@@ -83,5 +84,26 @@ public class TeremDAOImpl implements TeremDAO {
             e.printStackTrace();
         }
         return termek;
+    }
+
+    public Terem getTerem(Foglalas foglalas) {
+        Terem t;
+        try (Connection conn = DriverManager.getConnection(DB_STRING); PreparedStatement st = conn.prepareStatement("SELECT Terem.nev, Terem.sor, Terem.oszlop FROM Terem, Vetites WHERE Terem.nev = Vetites.terem AND Vetites.id = ?;")) {
+            st.setInt(1, foglalas.getVetitesId());
+            ResultSet rs = st.executeQuery();
+
+            if (rs.next()) {
+                t = new Terem(
+                        rs.getString(1),
+                        rs.getInt(2),
+                        rs.getInt(3)
+                );
+                return t;
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 }

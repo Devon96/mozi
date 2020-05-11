@@ -8,7 +8,9 @@ import javafx.beans.property.StringProperty;
 public class Foglalas {
 
     private IntegerProperty id = new SimpleIntegerProperty();
+    private IntegerProperty vetitesId = new SimpleIntegerProperty();
     private StringProperty nev = new SimpleStringProperty();
+    private StringProperty azonositokod = new SimpleStringProperty();
     private StringProperty filmcim = new SimpleStringProperty();
     private StringProperty idopont = new SimpleStringProperty();
     private StringProperty terem = new SimpleStringProperty();
@@ -16,6 +18,10 @@ public class Foglalas {
     private IntegerProperty oszlop = new SimpleIntegerProperty();
 
     public Foglalas() { }
+    public Foglalas(int sor, int oszlop) {
+        this.sor.set(sor);
+        this.oszlop.set(oszlop);
+    }
 
     public Foglalas(int id, String nev, String filmcim, String idopont, String terem, int sor, int oszlop) {
         this.id.set(id);
@@ -109,5 +115,29 @@ public class Foglalas {
 
     public void setOszlop(int oszlop) {
         this.oszlop.set(oszlop);
+    }
+
+    public int getVetitesId() {
+        return vetitesId.get();
+    }
+
+    public IntegerProperty vetitesIdProperty() {
+        return vetitesId;
+    }
+
+    public void setVetitesId(int vetitesId) {
+        this.vetitesId.set(vetitesId);
+    }
+
+    public String getAzonositokod() {
+        return azonositokod.get();
+    }
+
+    public StringProperty azonositokodProperty() {
+        return azonositokod;
+    }
+
+    public void setAzonositokod(String azonositokod) {
+        this.azonositokod.set(azonositokod);
     }
 }

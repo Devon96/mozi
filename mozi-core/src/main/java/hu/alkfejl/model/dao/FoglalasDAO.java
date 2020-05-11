@@ -7,6 +7,9 @@ import java.util.ArrayList;
 public interface FoglalasDAO {
 
     ArrayList<Foglalas> getFoglalasok();
+    ArrayList<Foglalas> getFoglalasok(Foglalas foglalas);
+    ArrayList<Foglalas> getUserFoglalasok(Foglalas foglalas);
+    boolean addFoglalas(Foglalas foglalas);
     boolean deleteFoglalas(Foglalas f);
     void createTabla();
 
