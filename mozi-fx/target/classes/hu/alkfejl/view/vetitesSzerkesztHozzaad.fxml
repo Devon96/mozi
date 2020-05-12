@@ -3,10 +3,11 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
+<?scenebuilder-stylesheet ../../../css/style.css?>
 
 <AnchorPane prefHeight="242.0" prefWidth="344.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.alkfejl.view.controller.VetitesSzerkesztHozzaadController">
    <children>
-      <GridPane prefHeight="248.0" prefWidth="344.0">
+      <GridPane prefHeight="248.0" prefWidth="344.0" styleClass="hatter" stylesheets="@../../../css/style.css">
         <columnConstraints>
           <ColumnConstraints hgrow="SOMETIMES" maxWidth="216.0" minWidth="10.0" prefWidth="135.0" />
           <ColumnConstraints hgrow="SOMETIMES" maxWidth="270.0" minWidth="10.0" prefWidth="197.0" />

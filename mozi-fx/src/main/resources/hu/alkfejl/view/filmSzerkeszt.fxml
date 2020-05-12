@@ -4,10 +4,11 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
+<?scenebuilder-stylesheet ../../../css/style.css?>
 
-<AnchorPane prefHeight="491.0" prefWidth="680.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.alkfejl.view.controller.FilmSzerkesztController">
+<AnchorPane prefHeight="491.0" prefWidth="680.0" styleClass="hatter" stylesheets="@../../../css/style.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.alkfejl.view.controller.FilmSzerkesztController">
    <children>
-      <SplitPane dividerPositions="0.40468227424749165" prefHeight="491.0" prefWidth="680.0">
+      <SplitPane dividerPositions="0.40468227424749165" prefHeight="491.0" prefWidth="680.0" styleClass="hatter">
         <items>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="435.0" prefWidth="323.0">
                <children>

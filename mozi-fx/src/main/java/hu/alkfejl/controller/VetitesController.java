@@ -22,7 +22,6 @@ public class VetitesController {
     }
 
     public ArrayList<Vetites> getVetitesek(){
-        dao.createTabla();
         return dao.getVetitesek();
     }
 

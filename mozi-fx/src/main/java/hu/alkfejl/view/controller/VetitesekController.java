@@ -43,7 +43,6 @@ public class VetitesekController implements Initializable {
 
     @FXML
     private void fomenu() throws IOException {
-        System.out.println("Valtas fomenube");
         App.changeScene("primary");
     }
 

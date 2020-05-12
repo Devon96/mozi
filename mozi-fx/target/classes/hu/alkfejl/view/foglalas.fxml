@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?scenebuilder-stylesheet ../../../css/style.css?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.alkfejl.view.controller.FoglalasokController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="hatter" stylesheets="@../../../css/style.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.alkfejl.view.controller.FoglalasokController">
    <children>
       <BorderPane prefHeight="400.0" prefWidth="649.0">
          <top>
-            <MenuBar BorderPane.alignment="CENTER">
+            <MenuBar styleClass="hatter" stylesheets="@../../../css/style.css" BorderPane.alignment="CENTER">
               <menus>
                 <Menu mnemonicParsing="false" text="&lt; Főmenü">
                   <items>
@@ -30,6 +32,37 @@
               </columns>
             </TableView>
          </center>
+         <bottom>
+            <Pane prefHeight="42.0" prefWidth="649.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox layoutY="-1.0" prefHeight="46.0" prefWidth="649.0" spacing="20.0">
+                     <children>
+                        <TextField fx:id="keres" promptText="Név">
+                           <opaqueInsets>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </opaqueInsets>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </TextField>
+                        <ComboBox fx:id="teremCom" prefWidth="150.0" promptText="Terem" />
+                        <ComboBox fx:id="filmCom" prefWidth="150.0" />
+                        <Button mnemonicParsing="false" onAction="#kereses" text="Keresés">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </Pane>
+         </bottom>
       </BorderPane>
    </children>
 </AnchorPane>

@@ -29,8 +29,6 @@ public class TeremController {
 
     public List<Terem> getAll() {
 
-        dao.createTabla();
-
         return dao.getTermek();
     }
     public boolean torol(String str){

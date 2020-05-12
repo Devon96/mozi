@@ -4,8 +4,9 @@
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?scenebuilder-stylesheet ../../../css/style.css?>
 
-<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="165.0" prefWidth="356.0" spacing="30.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.alkfejl.view.controller.TeremTorolController">
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="165.0" prefWidth="356.0" spacing="30.0" styleClass="hatter" stylesheets="@../../../css/style.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.alkfejl.view.controller.TeremTorolController">
    <children>
       <ComboBox fx:id="termek" prefHeight="36.0" prefWidth="227.0" promptText="Törlendő terem neve">
          <cursor>
@@ -15,7 +16,7 @@
             <Insets />
          </opaqueInsets>
       </ComboBox>
-      <Button onAction="#teremTorol" alignment="CENTER" mnemonicParsing="false" prefHeight="44.0" prefWidth="148.0" text="Töröl" />
+      <Button alignment="CENTER" mnemonicParsing="false" onAction="#teremTorol" prefHeight="44.0" prefWidth="148.0" text="Töröl" />
    </children>
    <opaqueInsets>
       <Insets bottom="100.0" />

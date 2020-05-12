@@ -24,8 +24,17 @@ public class FoglalasController {
     }
 
     public ArrayList<Foglalas> getFoglalasok(){
-        dao.createTabla();
         return dao.getFoglalasok();
+    }
+    public ArrayList<Foglalas> getFoglalasok(String str, String terem, String film){
+        if(terem.equals("Összes terem")){
+            terem = "%";
+        }
+        if(film.equals("Összes film")){
+            film = "%";
+        }
+
+        return dao.getFoglalasok(str, terem, film);
     }
 
     public void deleteFoglalas(Foglalas f) {

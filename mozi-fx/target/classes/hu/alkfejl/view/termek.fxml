@@ -2,12 +2,13 @@
 
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?scenebuilder-stylesheet ../../../css/style.css?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.alkfejl.view.controller.TeremController">
    <children>
       <BorderPane prefHeight="400.0" prefWidth="600.0">
          <top>
-            <MenuBar BorderPane.alignment="CENTER">
+            <MenuBar styleClass="hatter" stylesheets="@../../../css/style.css" BorderPane.alignment="CENTER">
               <menus>
                 <Menu mnemonicParsing="false" text="&lt; Főmenü">
                      <items>

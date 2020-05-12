@@ -3,13 +3,27 @@
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?scenebuilder-stylesheet ../../../css/style.css?>
 
-<VBox alignment="CENTER" prefHeight="242.0" prefWidth="200.0" spacing="20.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.alkfejl.view.controller.PrimaryController">
+<VBox alignment="CENTER" prefHeight="262.0" prefWidth="200.0" spacing="20.0" stylesheets="@../../../css/style.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.alkfejl.view.controller.PrimaryController">
    <children>
-      <Button fx:id="primaryButton" onAction="#filmek" styleClass="gomb" text="Filmek" />
-      <Button mnemonicParsing="false" onAction="#termek" styleClass="gomb" text="Termek" />
-      <Button mnemonicParsing="false" onAction="#vetitesek" styleClass="gomb" text="Vetítések" />
-      <Button mnemonicParsing="false" onAction="#foglalasok" styleClass="gomb" text="Foglalások" />
+      <Button fx:id="primaryButton" mnemonicParsing="false" onAction="#filmek" prefHeight="35.0" prefWidth="120.0" text="Filmek">
+         <font>
+            <Font size="17.0" />
+         </font></Button>
+      <Button mnemonicParsing="false" onAction="#termek" prefHeight="38.0" prefWidth="120.0" text="Termek">
+         <font>
+            <Font size="17.0" />
+         </font></Button>
+      <Button mnemonicParsing="false" onAction="#vetitesek" prefHeight="38.0" prefWidth="120.0" text="Vetítések">
+         <font>
+            <Font size="17.0" />
+         </font></Button>
+      <Button mnemonicParsing="false" onAction="#foglalasok" prefHeight="38.0" prefWidth="120.0" text="Foglalások">
+         <font>
+            <Font size="17.0" />
+         </font></Button>
    </children>
    <padding>
       <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />

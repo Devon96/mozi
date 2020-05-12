@@ -26,8 +26,6 @@ public class FilmController {
     }
     public List<Film> getAll() {
 
-        dao.createTabla();
-
         return dao.getFilmek();
     }
 
@@ -99,5 +97,9 @@ public class FilmController {
                 Utils.showWarning(hibak);
             }
         }
+    }
+
+    public void createTables() {
+        dao.createTabla();
     }
 }

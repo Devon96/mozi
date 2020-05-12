@@ -2,18 +2,13 @@ package hu.alkfejl.view.controller;
 
 import hu.alkfejl.App;
 import hu.alkfejl.controller.FilmController;
-import hu.alkfejl.model.bean.Film;
-import hu.alkfejl.model.bean.Foglalas;
+import hu.alkfejl.controller.TeremController;
+import hu.alkfejl.model.bean.*;
 import hu.alkfejl.controller.FoglalasController;
-import hu.alkfejl.model.bean.Szinesz;
-import hu.alkfejl.model.bean.Vetites;
 import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
-import javafx.scene.control.TableCell;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
+import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 
 import java.io.IOException;
@@ -39,6 +34,12 @@ public class FoglalasokController implements Initializable {
     private TableColumn<Foglalas, Integer> oszlopCol;
     @FXML
     private TableColumn<Foglalas, Void> torolCol;
+    @FXML
+    private TextField keres;
+    @FXML
+    private ComboBox<String> teremCom;
+    @FXML
+    private ComboBox<String> filmCom;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -62,6 +63,7 @@ public class FoglalasokController implements Initializable {
                 {
                     deleteBtn.setOnAction(event -> {
                         Foglalas f = getTableView().getItems().get(getIndex());
+                        System.out.println(f);
                         FoglalasController.getInstance().deleteFoglalas(f);
                         refreshTable();
                     });
@@ -79,6 +81,19 @@ public class FoglalasokController implements Initializable {
             };
         });
 
+        teremCom.getItems().add("Összes terem");
+        for(Terem t : TeremController.getInstance().getAll()){
+            teremCom.getItems().add(t.getNev());
+        }
+        teremCom.getSelectionModel().select(0);
+
+
+        filmCom.getItems().add("Összes film");
+        for(Film t : FilmController.getInstance().getAll()){
+            filmCom.getItems().add(t.getCim());
+        }
+        filmCom.getSelectionModel().select(0);
+
     }
 
     public void refreshTable(){
@@ -87,8 +102,13 @@ public class FoglalasokController implements Initializable {
     }
 
     @FXML
+    private void kereses(){
+        List<Foglalas> list = FoglalasController.getInstance().getFoglalasok(keres.getText(), teremCom.getValue(), filmCom.getValue());
+        tabla.setItems(FXCollections.observableList(list));
+    }
+
+    @FXML
     private void fomenu() throws IOException {
-        System.out.println("Valtas fomenube");
         App.changeScene("primary");
     }
 }
