@@ -39,6 +39,7 @@ public class FelhasznaloAzonositController extends HttpServlet {
         Foglalas foglalas = new Foglalas();
         foglalas.setVetitesId(Integer.parseInt(vetitesId));
 
+        req.getSession().setAttribute("vetitesId", vetitesId);
         req.getSession().setAttribute("foglalas", foglalas);
         resp.sendRedirect("pages/felhasznaloAzonositas.jsp");
     }

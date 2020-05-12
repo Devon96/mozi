@@ -9,7 +9,16 @@
 </head>
 <body>
 <jsp:include page="../FilmekController"/>
+<header>
+    <a href="/pages/filmek.jsp"><img src="/images/index.png" id="index" alt="Film összehasonlító"/></a>
+</header>
 <h1>Vetitett filmek</h1>
+
+<form method="post" action="/pages/filmek.jsp">
+    <input id="kereso" name="kulcsszo" type="text" placeholder="Filmcímrészlet" />
+    <input class="gomb" type="submit" value="Keresés" />
+</form>
+
 
 <c:forEach var="item" items="${requestScope.filmList}">
     <div class="elem">

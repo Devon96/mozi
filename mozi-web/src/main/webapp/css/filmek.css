@@ -32,7 +32,23 @@ div.cim{
 
 }
 img {
-    transition: transform .2s;
     width: 200px;
     height: 300px;
+}
+a{
+    color: #000000;
+}
+#kereso{
+    width: 600px;
+    height: 30px;
+    font-size: 25px;
+}
+.gomb{
+    width: 180px;
+    height: 40px;
+    background-color: green;
+    font-size: 27px;
+    color: aliceblue;
+    margin: 20px 0;
+    font-weight: bolder;
 }

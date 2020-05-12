@@ -32,9 +32,6 @@ public class Filmleiras extends HttpServlet {
             req.setAttribute("film", film);
             req.setAttribute("vetitesek", vetitesek);
             req.setAttribute("szineszek", filmDAO.getSzineszek(film));
-            for(Vetites i : vetitesek){
-                System.out.println(i);
-            }
 
         }
 

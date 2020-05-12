@@ -1,6 +1,6 @@
 
 #terem{
-    width: 1000px;
+    width: 700px;
     margin: 5px auto;
 }
 .szek{
@@ -20,4 +20,56 @@
     border:  2px solid #555555;
     float: left;
     margin: 0px;
+}
+main{
+    width: 1000px;
+    margin: 0 auto;
+}
+.elem{
+    font-size: 30px;
+    border-bottom: solid 2px #e05e26;
+    height: 32px;
+    padding: 10px 0;
+}
+.sor{
+    float: left;
+    width: 300px;
+}
+.oszlop{
+    float: left;
+    width: 300px;
+}
+.modosit{
+    float: left;
+    width: 200px;
+    text-align: center;
+    color: white;
+}
+.torol{
+    float: left;
+    width: 200px;
+    text-align: center;
+    color: white;
+}
+input{
+    width: 180px;
+    height: 25px;
+    font-size: 20px;
+}
+.torol:hover {
+    background-color: #bb0303;
+}
+.modosit:hover {
+    background-color: #009502;
+}
+h1{
+    color: white;
+    font-family: Calibri;
+}
+form{
+    height: 25px;
+}
+td{
+    font-size: 30px;
+    font-family: Calibri;
 }

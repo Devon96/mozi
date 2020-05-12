@@ -18,6 +18,10 @@
 <jsp:setProperty property="*" name="vetitesek"/>
 <jsp:setProperty property="*" name="szineszek"/>
 
+<header>
+    <a href="/pages/filmek.jsp"><img src="/images/index.png" id="index" alt="Film összehasonlító"/></a>
+</header>
+
 <div class="film">
     <div class="kepdiv">
         <img src="data:image/jpeg;base64,${film.kep}" />

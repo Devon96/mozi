@@ -1,7 +1,16 @@
 body{
     background-color: #555555;
-    padding: 100px;
+    padding: 0 100px;
 }
 br.clear{
     clear:both;
+}
+img#index{
+    height: 100px;
+    width: auto;
+}
+header{
+    margin: 0 auto;
+    width: 100%;
+    z-index: 2;
 }

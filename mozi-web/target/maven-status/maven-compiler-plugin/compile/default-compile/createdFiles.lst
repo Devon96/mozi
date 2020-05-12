@@ -1,5 +1,7 @@
 hu\alkfejl\controller\FilmekController.class
-hu\alkfejl\controller\Foglal.class
 hu\alkfejl\controller\Filmleiras.class
 hu\alkfejl\controller\FoglalasController.class
+hu\alkfejl\controller\UpdateFoglalas.class
+hu\alkfejl\controller\Foglal.class
+hu\alkfejl\controller\DeleteFoglalas.class
 hu\alkfejl\controller\FelhasznaloAzonositController.class
