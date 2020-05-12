@@ -25,39 +25,111 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f9294bf0-b1d7-4cb4-b28b-5d31665be9aa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jsp_jsp_api_2_2_1_b03.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jstl_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mozi-core/src/main/java/hu/alkfejl/config/DBConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mozi-core/src/main/resources/db.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mozi.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/mozi_web_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/mozi_web_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mozi-fx/src/main/resources/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mozi-web/src/main/java/hu/alkfejl/controller/DeleteFoglalas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mozi-web/src/main/java/hu/alkfejl/controller/UpdateFoglalas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mozi-web/src/main/webapp/images/index.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mozi-core/mozi-core.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-core/mozi-core.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-core/src/main/java/hu/alkfejl/model/bean/Foglalas.java" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-core/src/main/java/hu/alkfejl/model/bean/Foglalas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-core/src/main/java/hu/alkfejl/model/dao/FilmDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-core/src/main/java/hu/alkfejl/model/dao/FilmDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mozi-core/src/main/java/hu/alkfejl/model/dao/FilmDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-core/src/main/java/hu/alkfejl/model/dao/FilmDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-core/src/main/java/hu/alkfejl/model/dao/FoglalasDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-core/src/main/java/hu/alkfejl/model/dao/FoglalasDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mozi-core/src/main/java/hu/alkfejl/model/dao/FoglalasDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-core/src/main/java/hu/alkfejl/model/dao/FoglalasDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-core/src/main/java/hu/alkfejl/model/dao/TeremDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-core/src/main/java/hu/alkfejl/model/dao/TeremDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mozi-core/src/main/java/hu/alkfejl/model/dao/TeremDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-core/src/main/java/hu/alkfejl/model/dao/TeremDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-core/src/main/java/hu/alkfejl/model/dao/VetitesDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-core/src/main/java/hu/alkfejl/model/dao/VetitesDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mozi-core/src/main/java/hu/alkfejl/model/dao/VetitesDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-core/src/main/java/hu/alkfejl/model/dao/VetitesDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-core/src/main/resources/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-core/src/main/resources/db.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-core/target/classes/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-core/target/classes/db.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-core/target/classes/hu/alkfejl/model/bean/Foglalas.class" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-core/target/classes/hu/alkfejl/model/bean/Foglalas.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-core/target/classes/hu/alkfejl/model/dao/FilmDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-core/target/classes/hu/alkfejl/model/dao/FilmDAO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mozi-core/target/classes/hu/alkfejl/model/dao/FilmDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-core/target/classes/hu/alkfejl/model/dao/FilmDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-core/target/classes/hu/alkfejl/model/dao/FoglalasDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-core/target/classes/hu/alkfejl/model/dao/FoglalasDAO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mozi-core/target/classes/hu/alkfejl/model/dao/FoglalasDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-core/target/classes/hu/alkfejl/model/dao/FoglalasDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-core/target/classes/hu/alkfejl/model/dao/TeremDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-core/target/classes/hu/alkfejl/model/dao/TeremDAO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mozi-core/target/classes/hu/alkfejl/model/dao/TeremDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-core/target/classes/hu/alkfejl/model/dao/TeremDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-core/target/classes/hu/alkfejl/model/dao/VetitesDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-core/target/classes/hu/alkfejl/model/dao/VetitesDAO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mozi-core/target/classes/hu/alkfejl/model/dao/VetitesDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-core/target/classes/hu/alkfejl/model/dao/VetitesDAOImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mozi-core/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-core/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mozi-core/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-core/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mozi-core/target/mozi-core-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-core/target/mozi-core-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mozi-core/target/surefire-reports/TEST-hu.alkfejl.AppTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-core/target/surefire-reports/TEST-hu.alkfejl.AppTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mozi-core/target/surefire-reports/hu.alkfejl.AppTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-core/target/surefire-reports/hu.alkfejl.AppTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-fx/src/main/java/hu/alkfejl/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-fx/src/main/java/hu/alkfejl/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-fx/src/main/java/hu/alkfejl/controller/FilmController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-fx/src/main/java/hu/alkfejl/controller/FilmController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-fx/src/main/java/hu/alkfejl/controller/FoglalasController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-fx/src/main/java/hu/alkfejl/controller/FoglalasController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-fx/src/main/java/hu/alkfejl/controller/TeremController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-fx/src/main/java/hu/alkfejl/controller/TeremController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-fx/src/main/java/hu/alkfejl/controller/VetitesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-fx/src/main/java/hu/alkfejl/controller/VetitesController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-fx/src/main/java/hu/alkfejl/view/controller/FoglalasokController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-fx/src/main/java/hu/alkfejl/view/controller/FoglalasokController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-fx/src/main/java/hu/alkfejl/view/controller/TeremController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-fx/src/main/java/hu/alkfejl/view/controller/TeremController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-fx/src/main/java/hu/alkfejl/view/controller/VetitesekController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-fx/src/main/java/hu/alkfejl/view/controller/VetitesekController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-fx/src/main/resources/hu/alkfejl/view/addTerem.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-fx/src/main/resources/hu/alkfejl/view/addTerem.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-fx/src/main/resources/hu/alkfejl/view/filmSzerkeszt.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-fx/src/main/resources/hu/alkfejl/view/filmSzerkeszt.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-fx/src/main/resources/hu/alkfejl/view/filmek.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-fx/src/main/resources/hu/alkfejl/view/filmek.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-fx/src/main/resources/hu/alkfejl/view/foglalas.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-fx/src/main/resources/hu/alkfejl/view/foglalas.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-fx/src/main/resources/hu/alkfejl/view/primary.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-fx/src/main/resources/hu/alkfejl/view/primary.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-fx/src/main/resources/hu/alkfejl/view/teremTorol.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-fx/src/main/resources/hu/alkfejl/view/teremTorol.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-fx/src/main/resources/hu/alkfejl/view/termek.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-fx/src/main/resources/hu/alkfejl/view/termek.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-fx/src/main/resources/hu/alkfejl/view/vetitesSzerkesztHozzaad.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-fx/src/main/resources/hu/alkfejl/view/vetitesSzerkesztHozzaad.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-fx/src/main/resources/hu/alkfejl/view/vetitesek.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-fx/src/main/resources/hu/alkfejl/view/vetitesek.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-fx/target/classes/hu/alkfejl/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-fx/target/classes/hu/alkfejl/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-fx/target/classes/hu/alkfejl/controller/FilmController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-fx/target/classes/hu/alkfejl/controller/FilmController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-fx/target/classes/hu/alkfejl/controller/FoglalasController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-fx/target/classes/hu/alkfejl/controller/FoglalasController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-fx/target/classes/hu/alkfejl/controller/TeremController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-fx/target/classes/hu/alkfejl/controller/TeremController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-fx/target/classes/hu/alkfejl/controller/VetitesController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-fx/target/classes/hu/alkfejl/controller/VetitesController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-fx/target/classes/hu/alkfejl/view/addTerem.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-fx/target/classes/hu/alkfejl/view/addTerem.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-fx/target/classes/hu/alkfejl/view/controller/FoglalasokController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-fx/target/classes/hu/alkfejl/view/controller/FoglalasokController$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-fx/target/classes/hu/alkfejl/view/controller/FoglalasokController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-fx/target/classes/hu/alkfejl/view/controller/FoglalasokController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-fx/target/classes/hu/alkfejl/view/controller/TeremController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-fx/target/classes/hu/alkfejl/view/controller/TeremController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-fx/target/classes/hu/alkfejl/view/controller/VetitesekController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-fx/target/classes/hu/alkfejl/view/controller/VetitesekController$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-fx/target/classes/hu/alkfejl/view/controller/VetitesekController$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-fx/target/classes/hu/alkfejl/view/controller/VetitesekController$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-fx/target/classes/hu/alkfejl/view/controller/VetitesekController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-fx/target/classes/hu/alkfejl/view/controller/VetitesekController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-fx/target/classes/hu/alkfejl/view/filmSzerkeszt.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-fx/target/classes/hu/alkfejl/view/filmSzerkeszt.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-fx/target/classes/hu/alkfejl/view/filmek.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-fx/target/classes/hu/alkfejl/view/filmek.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-fx/target/classes/hu/alkfejl/view/foglalas.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-fx/target/classes/hu/alkfejl/view/foglalas.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-fx/target/classes/hu/alkfejl/view/primary.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-fx/target/classes/hu/alkfejl/view/primary.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-fx/target/classes/hu/alkfejl/view/teremTorol.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-fx/target/classes/hu/alkfejl/view/teremTorol.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-fx/target/classes/hu/alkfejl/view/termek.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-fx/target/classes/hu/alkfejl/view/termek.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-fx/target/classes/hu/alkfejl/view/vetitesSzerkesztHozzaad.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-fx/target/classes/hu/alkfejl/view/vetitesSzerkesztHozzaad.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-fx/target/classes/hu/alkfejl/view/vetitesek.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-fx/target/classes/hu/alkfejl/view/vetitesek.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mozi-fx/target/mozi-fx-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-fx/target/mozi-fx-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mozi-web/mozi-web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-web/mozi-web.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mozi-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-web/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mozi-web/src/main/java/MainServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-web/src/main/java/MainServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-web/src/main/java/hu/alkfejl/controller/FelhasznaloAzonositController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-web/src/main/java/hu/alkfejl/controller/FelhasznaloAzonositController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-web/src/main/java/hu/alkfejl/controller/FilmekController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-web/src/main/java/hu/alkfejl/controller/FilmekController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-web/src/main/java/hu/alkfejl/controller/Filmleiras.java" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-web/src/main/java/hu/alkfejl/controller/Filmleiras.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-web/src/main/java/hu/alkfejl/controller/Foglal.java" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-web/src/main/java/hu/alkfejl/controller/Foglal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-web/src/main/java/hu/alkfejl/controller/FoglalasController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-web/src/main/java/hu/alkfejl/controller/FoglalasController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-web/src/main/webapp/css/alap.css" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-web/src/main/webapp/css/alap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-web/src/main/webapp/css/azonosit.css" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-web/src/main/webapp/css/azonosit.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-web/src/main/webapp/css/filmek.css" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-web/src/main/webapp/css/filmek.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-web/src/main/webapp/css/filmleiras.css" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-web/src/main/webapp/css/filmleiras.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-web/src/main/webapp/css/foglalas.css" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-web/src/main/webapp/css/foglalas.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mozi-web/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-web/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mozi-web/target/classes/MainServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-web/target/classes/MainServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-web/src/main/webapp/pages/felhasznaloAzonositas.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-web/src/main/webapp/pages/felhasznaloAzonositas.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-web/src/main/webapp/pages/filmek.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-web/src/main/webapp/pages/filmek.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-web/src/main/webapp/pages/filmleiras.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-web/src/main/webapp/pages/filmleiras.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-web/src/main/webapp/pages/foglalas.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-web/src/main/webapp/pages/foglalas.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-web/target/classes/hu/alkfejl/controller/FelhasznaloAzonositController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-web/target/classes/hu/alkfejl/controller/FelhasznaloAzonositController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-web/target/classes/hu/alkfejl/controller/FilmekController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-web/target/classes/hu/alkfejl/controller/FilmekController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-web/target/classes/hu/alkfejl/controller/Filmleiras.class" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-web/target/classes/hu/alkfejl/controller/Filmleiras.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-web/target/classes/hu/alkfejl/controller/Foglal.class" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-web/target/classes/hu/alkfejl/controller/Foglal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-web/target/classes/hu/alkfejl/controller/FoglalasController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-web/target/classes/hu/alkfejl/controller/FoglalasController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-web/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-web/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-web/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-web/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mozi-web/target/mozi-web.war" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-web/target/mozi-web.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mozi-web/target/mozi-web/WEB-INF/classes/MainServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-web/target/mozi-web/WEB-INF/classes/MainServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-web/target/mozi-web/WEB-INF/classes/hu/alkfejl/controller/FelhasznaloAzonositController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-web/target/mozi-web/WEB-INF/classes/hu/alkfejl/controller/FelhasznaloAzonositController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-web/target/mozi-web/WEB-INF/classes/hu/alkfejl/controller/FilmekController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-web/target/mozi-web/WEB-INF/classes/hu/alkfejl/controller/FilmekController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-web/target/mozi-web/WEB-INF/classes/hu/alkfejl/controller/Filmleiras.class" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-web/target/mozi-web/WEB-INF/classes/hu/alkfejl/controller/Filmleiras.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-web/target/mozi-web/WEB-INF/classes/hu/alkfejl/controller/Foglal.class" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-web/target/mozi-web/WEB-INF/classes/hu/alkfejl/controller/Foglal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-web/target/mozi-web/WEB-INF/classes/hu/alkfejl/controller/FoglalasController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-web/target/mozi-web/WEB-INF/classes/hu/alkfejl/controller/FoglalasController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mozi-web/target/mozi-web/WEB-INF/lib/mozi-core-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-web/target/mozi-web/WEB-INF/lib/mozi-core-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-web/target/mozi-web/css/alap.css" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-web/target/mozi-web/css/alap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-web/target/mozi-web/css/azonosit.css" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-web/target/mozi-web/css/azonosit.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-web/target/mozi-web/css/filmek.css" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-web/target/mozi-web/css/filmek.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-web/target/mozi-web/css/filmleiras.css" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-web/target/mozi-web/css/filmleiras.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-web/target/mozi-web/css/foglalas.css" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-web/target/mozi-web/css/foglalas.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mozi-web/target/mozi-web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-web/target/mozi-web/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-web/target/mozi-web/pages/felhasznaloAzonositas.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-web/target/mozi-web/pages/felhasznaloAzonositas.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-web/target/mozi-web/pages/filmek.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-web/target/mozi-web/pages/filmek.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-web/target/mozi-web/pages/filmleiras.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-web/target/mozi-web/pages/filmleiras.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozi-web/target/mozi-web/pages/foglalas.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/mozi-web/target/mozi-web/pages/foglalas.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +145,10 @@
       <list>
         <option value="Interface" />
         <option value="FxmlFile" />
+        <option value="JavaScript File" />
+        <option value="Jsp File" />
         <option value="Class" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -104,6 +179,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../javaWeb/03-person-administrator-jsp-delete-modify" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -112,13 +188,18 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Devon\Desktop\4. félév\Alkalmazasfejlesztes\Projekt\mozi\mozi-web\src\main\webapp\images" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Devon\Desktop\4. félév\Alkalmazasfejlesztes\Projekt\mozi\mozi-web\src\main\webapp\images" />
       <recent name="C:\Users\Devon\Desktop\4. félév\Alkalmazasfejlesztes\Projekt\mozi\mozi-core\src\main\resources" />
       <recent name="C:\Users\Devon\Desktop\4. félév\Alkalmazasfejlesztes\Projekt\mozi\mozi-fx\src\main\java" />
       <recent name="C:\Users\Devon\Desktop\4. félév\Alkalmazasfejlesztes\Projekt\mozi\mozi-fx\src\main\resources\hu\alkfejl\view" />
@@ -174,18 +255,17 @@
       </method>
     </configuration>
     <configuration name="Tomcat 9.0.33" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.33" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:9002/mozi_web_war/" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:9002/" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="mozi-web:war">
           <settings>
-            <option name="CONTEXT_PATH" value="/mozi_web_war" />
+            <option name="CONTEXT_PATH" value="" />
           </settings>
         </artifact>
       </deployment>
       <server-settings>
         <option name="BASE_DIRECTORY_NAME" value="Tomcat_9_0_33_mozi" />
-        <option name="HTTP_PORT" value="9002" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -484,7 +564,18 @@
       <workItem from="1588803192318" duration="469000" />
       <workItem from="1588817222822" duration="3076000" />
       <workItem from="1588901198918" duration="5530000" />
-      <workItem from="1588935511914" duration="16082000" />
+      <workItem from="1588935511914" duration="30054000" />
+      <workItem from="1588989877203" duration="1574000" />
+      <workItem from="1589020356643" duration="9068000" />
+      <workItem from="1589037584559" duration="14276000" />
+      <workItem from="1589109672716" duration="872000" />
+      <workItem from="1589114126365" duration="7861000" />
+      <workItem from="1589131252305" duration="28994000" />
+      <workItem from="1589197338590" duration="4891000" />
+      <workItem from="1589206699063" duration="19698000" />
+      <workItem from="1589233214311" duration="8864000" />
+      <workItem from="1589244667530" duration="6624000" />
+      <workItem from="1589282400479" duration="8260000" />
     </task>
     <servers />
   </component>
@@ -507,86 +598,86 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="106" y="202" key="#Inspections" timestamp="1587985956871">
+    <state x="106" y="202" key="#Inspections" timestamp="1589163625939">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="106" y="202" key="#Inspections/0.0.1920.1040@0.0.1920.1040" timestamp="1587985956871" />
-    <state x="26" y="189" key="#Project_Structure" timestamp="1588944275901">
+    <state x="106" y="202" key="#Inspections/0.0.1920.1040@0.0.1920.1040" timestamp="1589163625939" />
+    <state x="26" y="189" key="#Project_Structure" timestamp="1589213902076">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="26" y="189" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1588944275901" />
+    <state x="26" y="189" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1589213902076" />
     <state x="738" y="417" key="#Tomcat_Server" timestamp="1587062166734">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="738" y="417" key="#Tomcat_Server/0.0.1920.1040@0.0.1920.1040" timestamp="1587062166734" />
-    <state x="758" y="245" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588965794580">
+    <state x="444" y="233" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588983233782">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="758" y="245" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588965794580" />
-    <state x="1016" y="207" key="#com.intellij.ide.util.MemberChooser" timestamp="1588904567476">
+    <state x="444" y="233" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588983233782" />
+    <state x="1016" y="207" key="#com.intellij.ide.util.MemberChooser" timestamp="1589246238253">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1016" y="207" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1588904567476" />
+    <state x="1016" y="207" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1589246238253" />
     <state x="724" y="186" width="869" height="722" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable" timestamp="1587062821993">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="724" y="186" width="869" height="722" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable/0.0.1920.1040@0.0.1920.1040" timestamp="1587062821993" />
-    <state x="941" y="270" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1587814181609">
+    <state x="941" y="270" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1589224326193">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="941" y="270" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587814181609" />
-    <state x="938" y="288" key="FileChooserDialogImpl" timestamp="1588968277457">
+    <state x="941" y="270" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589224326193" />
+    <state x="938" y="288" key="FileChooserDialogImpl" timestamp="1589290583528">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="938" y="288" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1588968277457" />
-    <state width="426" height="366" key="GridCell.Tab.0.bottom" timestamp="1588967805459">
+    <state x="938" y="288" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1589290583528" />
+    <state width="1152" height="207" key="GridCell.Tab.0.bottom" timestamp="1589290938307">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="426" height="366" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588967805459" />
-    <state width="426" height="366" key="GridCell.Tab.0.center" timestamp="1588967805458">
+    <state width="1152" height="207" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589290938307" />
+    <state width="1152" height="207" key="GridCell.Tab.0.center" timestamp="1589290938307">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="426" height="366" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588967805458" />
-    <state width="426" height="366" key="GridCell.Tab.0.left" timestamp="1588967805458">
+    <state width="1152" height="207" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589290938307" />
+    <state width="1152" height="207" key="GridCell.Tab.0.left" timestamp="1589290938307">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="426" height="366" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588967805458" />
-    <state width="426" height="366" key="GridCell.Tab.0.right" timestamp="1588967805458">
+    <state width="1152" height="207" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589290938307" />
+    <state width="1152" height="207" key="GridCell.Tab.0.right" timestamp="1589290938307">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="426" height="366" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588967805458" />
-    <state width="426" height="366" key="GridCell.Tab.1.bottom" timestamp="1588967805459">
+    <state width="1152" height="207" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589290938307" />
+    <state width="1152" height="207" key="GridCell.Tab.1.bottom" timestamp="1589290938242">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="426" height="366" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588967805459" />
-    <state width="426" height="366" key="GridCell.Tab.1.center" timestamp="1588967805459">
+    <state width="1152" height="207" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589290938242" />
+    <state width="1152" height="207" key="GridCell.Tab.1.center" timestamp="1589290938242">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="426" height="366" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588967805459" />
-    <state width="426" height="366" key="GridCell.Tab.1.left" timestamp="1588967805459">
+    <state width="1152" height="207" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589290938242" />
+    <state width="1152" height="207" key="GridCell.Tab.1.left" timestamp="1589290938242">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="426" height="366" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588967805459" />
-    <state width="426" height="366" key="GridCell.Tab.1.right" timestamp="1588967805459">
+    <state width="1152" height="207" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589290938242" />
+    <state width="1152" height="207" key="GridCell.Tab.1.right" timestamp="1589290938242">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="426" height="366" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588967805459" />
-    <state width="426" height="366" key="GridCell.Tab.2.bottom" timestamp="1588967805459">
+    <state width="1152" height="207" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589290938242" />
+    <state width="1152" height="207" key="GridCell.Tab.2.bottom" timestamp="1589290938243">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="426" height="366" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588967805459" />
-    <state width="426" height="366" key="GridCell.Tab.2.center" timestamp="1588967805459">
+    <state width="1152" height="207" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589290938243" />
+    <state width="1152" height="207" key="GridCell.Tab.2.center" timestamp="1589290938243">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="426" height="366" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588967805459" />
-    <state width="426" height="366" key="GridCell.Tab.2.left" timestamp="1588967805459">
+    <state width="1152" height="207" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589290938243" />
+    <state width="1152" height="207" key="GridCell.Tab.2.left" timestamp="1589290938243">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="426" height="366" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588967805459" />
-    <state width="426" height="366" key="GridCell.Tab.2.right" timestamp="1588967805459">
+    <state width="1152" height="207" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589290938243" />
+    <state width="1152" height="207" key="GridCell.Tab.2.right" timestamp="1589290938243">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="426" height="366" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588967805459" />
+    <state width="1152" height="207" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589290938243" />
     <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1588941309123">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -607,10 +698,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="941" y="284" key="extract.method.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588631992162" />
-    <state x="539" y="147" key="new project wizard" timestamp="1587813866972">
+    <state x="539" y="147" key="new project wizard" timestamp="1589208233871">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="539" y="147" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1587813866972" />
+    <state x="539" y="147" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1589208233871" />
+    <state x="867" y="244" key="run.anything.popup" timestamp="1589145121886">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="867" y="244" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1589145121886" />
     <state x="372" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1588211011032">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
