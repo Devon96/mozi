@@ -1,6 +1,7 @@
 package hu.alkfejl.model.dao;
 
 import hu.alkfejl.config.DBConfig;
+import hu.alkfejl.model.bean.Film;
 import hu.alkfejl.model.bean.Foglalas;
 import hu.alkfejl.model.bean.Terem;
 
@@ -24,15 +25,32 @@ public class FoglalasDAOImpl implements FoglalasDAO {
     @Override
     public ArrayList<Foglalas> getFoglalasok() {
         ArrayList<Foglalas> foglalasok = new ArrayList<>();
-        foglalasok.add(new Foglalas(1, "Jánoska", "Bosszúállók", "2020-11-11 14:00", "Nagyterem", 11, 21));
-        foglalasok.add(new Foglalas(2, "Csuka Józsi", "Bosszúállók", "2020-11-11 14:00", "Nagyterem", 12, 21));
+        try (Connection conn = DriverManager.getConnection(DB_STRING); Statement st = conn.createStatement()) {
+            ResultSet rs = st.executeQuery("SELECT Foglalas.id, Foglalas.nev, Film.cim, Vetites.idopont, Terem.nev, Foglalas.sor, Foglalas.oszlop FROM Foglalas, Film, Vetites, Terem WHERE Foglalas.vetites_id = Vetites.id AND Vetites.filmid = Film.id AND Terem.nev = Vetites.terem;");
+
+            while (rs.next()) {
+                Foglalas f = new Foglalas(
+                        rs.getInt(1),
+                        rs.getString(2),
+                        rs.getString(3),
+                        rs.getString(4),
+                        rs.getString(5),
+                        rs.getInt(6),
+                        rs.getInt(7)
+                );
+                foglalasok.add(f);
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
         return foglalasok;
     }
 
     @Override
     public ArrayList<Foglalas> getFoglalasok(Foglalas foglalas) {
         ArrayList<Foglalas> foglalasok = new ArrayList<>();
-        try (Connection conn = DriverManager.getConnection(DB_STRING); PreparedStatement st = conn.prepareStatement("SELECT sor, oszlop FROM Foglalas WHERE vetites_id = ? AND nev != ? AND jelszo != ?;")) {
+        try (Connection conn = DriverManager.getConnection(DB_STRING); PreparedStatement st = conn.prepareStatement("SELECT sor, oszlop FROM Foglalas WHERE vetites_id = ? AND ( nev != ? OR jelszo != ? );")) {
             st.setInt(1, foglalas.getVetitesId());
             st.setString(2, foglalas.getNev());
             st.setString(3, foglalas.getAzonositokod());
@@ -53,18 +71,49 @@ public class FoglalasDAOImpl implements FoglalasDAO {
     }
 
     @Override
+    public ArrayList<Foglalas> getFoglalasok(String str, String terem, String film) {
+        ArrayList<Foglalas> foglalasok = new ArrayList<>();
+        str = str.toUpperCase();
+        str = "%" + str + "%";
+
+        try (Connection conn = DriverManager.getConnection(DB_STRING); PreparedStatement st = conn.prepareStatement("SELECT Foglalas.id, Foglalas.nev, Film.cim, Vetites.idopont, Terem.nev, Foglalas.sor, Foglalas.oszlop FROM Foglalas, Film, Vetites, Terem WHERE Foglalas.vetites_id = Vetites.id AND Vetites.filmid = Film.id AND Terem.nev = Vetites.terem AND UPPER(Foglalas.nev) LIKE ? AND Terem.nev LIKE ? AND Film.cim LIKE ?;")) {
+            st.setString(1, str);
+            st.setString(2, terem);
+            st.setString(3, film);
+            ResultSet rs = st.executeQuery();
+
+            while (rs.next()) {
+                Foglalas f = new Foglalas(
+                        rs.getInt(1),
+                        rs.getString(2),
+                        rs.getString(3),
+                        rs.getString(4),
+                        rs.getString(5),
+                        rs.getInt(6),
+                        rs.getInt(7)
+                );
+                foglalasok.add(f);
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return foglalasok;
+    }
+
+    @Override
     public ArrayList<Foglalas> getUserFoglalasok(Foglalas foglalas) {
         ArrayList<Foglalas> foglalasok = new ArrayList<>();
-        try (Connection conn = DriverManager.getConnection(DB_STRING); PreparedStatement st = conn.prepareStatement("SELECT sor, oszlop FROM Foglalas WHERE vetites_id = ? AND nev = ? AND jelszo = ?;")) {
+        try (Connection conn = DriverManager.getConnection(DB_STRING); PreparedStatement st = conn.prepareStatement("SELECT id, sor, oszlop FROM Foglalas WHERE vetites_id = ? AND nev = ? AND jelszo = ?;")) {
             st.setInt(1, foglalas.getVetitesId());
             st.setString(2, foglalas.getNev());
             st.setString(3, foglalas.getAzonositokod());
             ResultSet rs = st.executeQuery();
-
             while(rs.next()) {
                 Foglalas f = new Foglalas(
                         rs.getInt(1),
-                        rs.getInt(2)
+                        rs.getInt(2),
+                        rs.getInt(3)
                 );
                 foglalasok.add(f);
             }
@@ -109,13 +158,20 @@ public class FoglalasDAOImpl implements FoglalasDAO {
     }
 
     @Override
-    public void createTabla() {
+    public boolean updateFoglalas(Foglalas foglalas) {
+        try (Connection conn = DriverManager.getConnection(DB_STRING); PreparedStatement st = conn.prepareStatement("Update Foglalas SET sor = ?, oszlop = ? WHERE id = ?;")) {
+            st.setInt(1, foglalas.getSor());
+            st.setInt(2, foglalas.getOszlop());
+            st.setInt(3, foglalas.getId());
 
-        try (Connection conn = DriverManager.getConnection(DB_STRING); Statement st = conn.createStatement()) {
-            st.executeUpdate("CREATE TABLE IF NOT EXISTS Foglalas(id INTEGER PRIMARY KEY AUTOINCREMENT, nev TEXT NOT NULL, jelszo TEXT NOT NULL, sor INTEGER, oszlop INTEGER, vetites_id INTEGER, FOREIGN KEY(vetites_id) REFERENCES Vetites(id));");
+            int res = st.executeUpdate();
+            if (res == 1) {
+                return true;
+            }
         } catch (SQLException e) {
             e.printStackTrace();
         }
-
+        return false;
     }
+
 }

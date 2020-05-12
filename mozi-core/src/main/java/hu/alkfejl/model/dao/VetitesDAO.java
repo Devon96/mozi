@@ -1,6 +1,7 @@
 package hu.alkfejl.model.dao;
 
 import hu.alkfejl.model.bean.Film;
+import hu.alkfejl.model.bean.Foglalas;
 import hu.alkfejl.model.bean.Vetites;
 
 import java.util.ArrayList;
@@ -12,5 +13,5 @@ public interface VetitesDAO {
     boolean addVetites(Vetites vetites);
     boolean updateVetites(Vetites vetites);
     boolean deleteVetites(Vetites vetites);
-    void createTabla();
+    Vetites getVetites(Foglalas foglalas);
 }

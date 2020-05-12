@@ -20,16 +20,6 @@ public class TeremDAOImpl implements TeremDAO {
         }
     }
 
-
-    @Override
-    public void createTabla() {
-        try (Connection conn = DriverManager.getConnection(DB_STRING); Statement st = conn.createStatement()) {
-            st.executeUpdate("CREATE TABLE IF NOT EXISTS Terem(nev VARCHAR PRIMARY KEY, sor INTEGER, oszlop INTEGER)");
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-    }
-
     @Override
     public boolean add(Terem t) {
         try (Connection conn = DriverManager.getConnection(DB_STRING); PreparedStatement st = conn.prepareStatement("INSERT INTO Terem VALUES(?,?,?);")) {

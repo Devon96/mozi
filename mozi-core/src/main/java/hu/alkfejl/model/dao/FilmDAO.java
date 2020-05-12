@@ -8,6 +8,7 @@ import java.util.ArrayList;
 public interface FilmDAO {
 
     ArrayList<Film> getFilmek();
+    ArrayList<Film> getFilmek(String str);
     boolean addFilm(Film film, ArrayList<Szinesz> szineszek);
     boolean addSzinesz(Film film, Szinesz szinesz);
     void createTabla();

@@ -22,6 +22,11 @@ public class Foglalas {
         this.sor.set(sor);
         this.oszlop.set(oszlop);
     }
+    public Foglalas(int id, int sor, int oszlop) {
+        this.id.set(id);
+        this.sor.set(sor);
+        this.oszlop.set(oszlop);
+    }
 
     public Foglalas(int id, String nev, String filmcim, String idopont, String terem, int sor, int oszlop) {
         this.id.set(id);
@@ -31,6 +36,21 @@ public class Foglalas {
         this.terem.set(terem);
         this.sor.set(sor);
         this.oszlop.set(oszlop);
+    }
+
+    @Override
+    public String toString() {
+        return "Foglalas{" +
+                "id=" + id.get() +
+                ", vetitesId=" + vetitesId.get() +
+                ", nev=" + nev.get() +
+                ", azonositokod=" + azonositokod.get() +
+                ", filmcim=" + filmcim.get() +
+                ", idopont=" + idopont.get() +
+                ", terem=" + terem.get() +
+                ", sor=" + sor.get() +
+                ", oszlop=" + oszlop.get() +
+                '}';
     }
 
     public int getId() {

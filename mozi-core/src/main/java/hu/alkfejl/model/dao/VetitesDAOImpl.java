@@ -2,6 +2,7 @@ package hu.alkfejl.model.dao;
 
 import hu.alkfejl.config.DBConfig;
 import hu.alkfejl.model.bean.Film;
+import hu.alkfejl.model.bean.Foglalas;
 import hu.alkfejl.model.bean.Szinesz;
 import hu.alkfejl.model.bean.Vetites;
 import javafx.beans.property.IntegerProperty;
@@ -96,10 +97,6 @@ public class VetitesDAOImpl implements VetitesDAO {
         }
         return false;
 
-
-
-
-
     }
 
     @Override
@@ -123,11 +120,18 @@ public class VetitesDAOImpl implements VetitesDAO {
     }
 
     @Override
-    public void createTabla() {
-        try (Connection conn = DriverManager.getConnection(DB_STRING); Statement st = conn.createStatement()) {
-            st.executeUpdate("CREATE TABLE IF NOT EXISTS Vetites(id INTEGER PRIMARY KEY AUTOINCREMENT, filmid INTEGER, terem TEXT NOT NULL, idopont TEXT, FOREIGN KEY(filmid) REFERENCES Film(id), FOREIGN KEY(terem) REFERENCES Terem(nev));");
+    public Vetites getVetites(Foglalas foglalas) {
+
+        try (Connection conn = DriverManager.getConnection(DB_STRING); PreparedStatement st = conn.prepareStatement("SELECT id, idopont FROM Vetites WHERE id = ?;")) {
+            st.setInt(1, foglalas.getVetitesId());
+            ResultSet rs = st.executeQuery();
+            if (rs.next()) {
+                Vetites v = new Vetites(rs.getInt(1), rs.getString(2));
+                return v;
+            }
         } catch (SQLException e) {
             e.printStackTrace();
         }
+        return null;
     }
 }

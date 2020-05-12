@@ -9,7 +9,7 @@ public interface TeremDAO {
 
     ArrayList<Terem> getTermek();
 
-    void createTabla();
+    /*void createTabla();*/
     boolean add(Terem t);
 
     boolean torol(String str);

@@ -46,6 +46,33 @@ public class FilmDAOImpl implements FilmDAO {
     }
 
     @Override
+    public ArrayList<Film> getFilmek(String str) {
+    str = str.toUpperCase();
+    str = "%"+str+"%";
+    ArrayList<Film> filmek = new ArrayList<>();
+        try (Connection conn = DriverManager.getConnection(DB_STRING); PreparedStatement st = conn.prepareStatement("SELECT * FROM Film WHERE UPPER(cim) LIKE ?;")) {
+            st.setString(1, str);
+            ResultSet rs = st.executeQuery();
+            while (rs.next()) {
+                Film f = new Film(
+                        rs.getInt(1),
+                        rs.getString(2),
+                        rs.getInt(4),
+                        rs.getString(3),
+                        rs.getString(6),
+                        rs.getInt(5),
+                        rs.getString(7)
+                );
+                filmek.add(f);
+                System.out.println(f);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return filmek;
+    }
+
+    @Override
     public boolean addFilm(Film film, ArrayList<Szinesz> szineszek) {//Film(id, cim, rendezo, hossz, korhatar, leiras, kep)
         try (Connection conn = DriverManager.getConnection(DB_STRING); PreparedStatement st = conn.prepareStatement("INSERT INTO Film (cim, rendezo, hossz, korhatar, leiras, kep) VALUES(?,?,?,?,?,?);")) {
             st.setString(1, film.getCim());
@@ -100,12 +127,6 @@ public class FilmDAOImpl implements FilmDAO {
 
     @Override
     public void createTabla() {
-        /*
-        try (Connection conn = DriverManager.getConnection(DB_STRING); Statement st = conn.createStatement()) {
-            st.executeUpdate("DROP TABLE Film;");
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }*/
 
         try (Connection conn = DriverManager.getConnection(DB_STRING); Statement st = conn.createStatement()) {
             st.executeUpdate("CREATE TABLE IF NOT EXISTS Szinesz(id INTEGER NOT NULL, nev TEXT NOT NULL);");
@@ -118,6 +139,26 @@ public class FilmDAOImpl implements FilmDAO {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+
+        try (Connection conn = DriverManager.getConnection(DB_STRING); Statement st = conn.createStatement()) {
+            st.executeUpdate("CREATE TABLE IF NOT EXISTS Terem(nev VARCHAR PRIMARY KEY, sor INTEGER, oszlop INTEGER)");
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        try (Connection conn = DriverManager.getConnection(DB_STRING); Statement st = conn.createStatement()) {
+            st.executeUpdate("CREATE TABLE IF NOT EXISTS Vetites(id INTEGER PRIMARY KEY AUTOINCREMENT, filmid INTEGER, terem TEXT NOT NULL, idopont TEXT, FOREIGN KEY(filmid) REFERENCES Film(id), FOREIGN KEY(terem) REFERENCES Terem(nev));");
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+
+        try (Connection conn = DriverManager.getConnection(DB_STRING); Statement st = conn.createStatement()) {
+            st.executeUpdate("CREATE TABLE IF NOT EXISTS Foglalas(id INTEGER PRIMARY KEY AUTOINCREMENT, nev TEXT NOT NULL, jelszo TEXT NOT NULL, sor INTEGER, oszlop INTEGER, vetites_id INTEGER, FOREIGN KEY(vetites_id) REFERENCES Vetites(id));");
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
     }
 
     @Override
