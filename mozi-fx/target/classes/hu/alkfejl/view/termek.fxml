@@ -26,10 +26,10 @@
          <center>
             <TableView fx:id="tabla" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                <columns>
-                  <TableColumn fx:id="nevCol" maxWidth="300.0" minWidth="300.0" prefWidth="300.0" text="Termnév" />
-                  <TableColumn fx:id="sorCol" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" text="Sorokszáma" />
-                  <TableColumn fx:id="oszlopCol" maxWidth="110.0" minWidth="110.0" prefWidth="110.0" text="Oszlopok száma" />
-                  <TableColumn fx:id="helyCol" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" text="Férőhely" />
+                  <TableColumn fx:id="nevCol" maxWidth="400.0" minWidth="300.0" prefWidth="300.0" text="Termnév" />
+                  <TableColumn fx:id="sorCol" maxWidth="300.0" minWidth="100.0" prefWidth="100.0" text="Sorokszáma" />
+                  <TableColumn fx:id="oszlopCol" maxWidth="300.0" minWidth="110.0" prefWidth="110.0" text="Oszlopok száma" />
+                  <TableColumn fx:id="helyCol" maxWidth="300.0" minWidth="100.0" prefWidth="100.0" text="Férőhely" />
                </columns></TableView>
          </center>
       </BorderPane>

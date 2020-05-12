@@ -5,9 +5,9 @@
 <?import javafx.scene.layout.*?>
 <?scenebuilder-stylesheet ../../../css/style.css?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.alkfejl.view.controller.FilmekController">
+<AnchorPane prefHeight="400.0" prefWidth="646.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.alkfejl.view.controller.FilmekController">
    <children>
-      <BorderPane prefHeight="400.0" prefWidth="600.0">
+      <BorderPane prefHeight="400.0" prefWidth="646.0">
          <bottom>
             <ButtonBar prefHeight="40.0" prefWidth="200.0" styleClass="hatter" stylesheets="@../../../css/style.css" BorderPane.alignment="CENTER">
               <buttons>
@@ -37,13 +37,13 @@
             </MenuBar>
          </top>
          <center>
-            <TableView fx:id="tabla" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <TableView fx:id="tabla" prefHeight="318.0" prefWidth="630.0" BorderPane.alignment="CENTER">
               <columns>
-                <TableColumn fx:id="cimCol" maxWidth="200.0" minWidth="200.0" prefWidth="200.0" text="Cím" />
-                <TableColumn fx:id="rendezoCol" maxWidth="150.0" minWidth="150.0" prefWidth="150.0" text="Rendező" />
-                  <TableColumn fx:id="hosszCol" maxWidth="70.0" minWidth="70.0" prefWidth="70.0" text="Hossz" />
-                  <TableColumn fx:id="korhatarCol" maxWidth="70.0" minWidth="70.0" prefWidth="70.0" text="Korhatár" />
-                  <TableColumn fx:id="szerkesztCol" maxWidth="110.0" minWidth="110.0" prefWidth="110.0" text="Szerkeszt" />
+                <TableColumn fx:id="cimCol" maxWidth="300.0" minWidth="200.0" prefWidth="200.0" text="Cím" />
+                <TableColumn fx:id="rendezoCol" maxWidth="300.0" minWidth="150.0" prefWidth="150.0" text="Rendező" />
+                  <TableColumn fx:id="hosszCol" maxWidth="300.0" minWidth="90.0" prefWidth="90.0" text="Hossz" />
+                  <TableColumn fx:id="korhatarCol" maxWidth="300.0" minWidth="90.0" prefWidth="90.0" text="Korhatár" />
+                  <TableColumn fx:id="szerkesztCol" maxWidth="300.0" minWidth="110.0" prefWidth="110.0" text="Szerkeszt" />
               </columns>
             </TableView>
          </center>

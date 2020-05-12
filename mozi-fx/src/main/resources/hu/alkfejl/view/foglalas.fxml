@@ -5,9 +5,9 @@
 <?import javafx.scene.layout.*?>
 <?scenebuilder-stylesheet ../../../css/style.css?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="hatter" stylesheets="@../../../css/style.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.alkfejl.view.controller.FoglalasokController">
+<AnchorPane prefHeight="400.0" prefWidth="706.0" styleClass="hatter" stylesheets="@../../../css/style.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.alkfejl.view.controller.FoglalasokController">
    <children>
-      <BorderPane prefHeight="400.0" prefWidth="649.0">
+      <BorderPane prefHeight="400.0" prefWidth="714.0">
          <top>
             <MenuBar styleClass="hatter" stylesheets="@../../../css/style.css" BorderPane.alignment="CENTER">
               <menus>
@@ -22,13 +22,13 @@
          <center>
             <TableView fx:id="tabla" prefHeight="375.0" prefWidth="625.0" BorderPane.alignment="CENTER">
               <columns>
-                <TableColumn fx:id="nevCol" maxWidth="150.0" minWidth="150.0" prefWidth="150.0" text="Név" />
-                <TableColumn fx:id="filmCol" maxWidth="140.0" minWidth="140.0" prefWidth="140.0" text="Film" />
-                  <TableColumn fx:id="idoCol" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" text="Időpont" />
-                  <TableColumn fx:id="teremCol" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" text="Terem" />
-                  <TableColumn fx:id="sorCol" maxWidth="45.0" minWidth="45.0" prefWidth="45.0" text="Sor" />
-                  <TableColumn fx:id="oszlopCol" maxWidth="45.0" minWidth="45.0" prefWidth="45.0" text="Oszlop" />
-                  <TableColumn fx:id="torolCol" maxWidth="70.0" minWidth="70.0" prefWidth="70.0" text="Töröl" />
+                <TableColumn fx:id="nevCol" maxWidth="300.0" minWidth="150.0" prefWidth="150.0" text="Név" />
+                <TableColumn fx:id="filmCol" maxWidth="300.0" minWidth="140.0" prefWidth="140.0" text="Film" />
+                  <TableColumn fx:id="idoCol" maxWidth="300.0" minWidth="120.0" prefWidth="120.0" text="Időpont" />
+                  <TableColumn fx:id="teremCol" maxWidth="200.0" minWidth="100.0" prefWidth="100.0" text="Terem" />
+                  <TableColumn fx:id="sorCol" maxWidth="100.0" minWidth="60.0" prefWidth="60.0" text="Sor" />
+                  <TableColumn fx:id="oszlopCol" maxWidth="100.0" minWidth="60.0" prefWidth="60.0" text="Oszlop" />
+                  <TableColumn fx:id="torolCol" maxWidth="200.0" minWidth="80.0" text="Töröl" />
               </columns>
             </TableView>
          </center>
