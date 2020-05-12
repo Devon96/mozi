@@ -46,7 +46,7 @@
                     }
                 }
                 if(szabad){
-                    out.print("<a href='../Foglal?sor=" + i + "&oszlop=" + j + "'><div style='width: " + (szekszelesseg-4) + "px;height:" + (szekszelesseg-4) + "px;' class='szek'></div></a>");
+                    out.print("<a href='../Foglal?sor=" + i + "&oszlop=" + j + "'><div style='width: " + (szekszelesseg-4) + "px;height:" + (szekszelesseg-4) + "px;' class='szek'>" + i + ":" + j + "</div></a>");
                 }
             }
             out.print("<br class='clear' />");
