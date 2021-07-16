@@ -1,4 +1,4 @@
-## **Mozi üzemeltető program**
+## **Moziüzemeltető program**
 
 #### **`Java verzió: 11`**
 #### **`Tomcat verzió: 9.0.33`**
