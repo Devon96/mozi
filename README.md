@@ -1,4 +1,4 @@
-## **Alkalmazásfejlesztés I gyakorlat Mozi project**
+## **Mozi üzemeltető program**
 
 #### **`Java verzió: 11`**
 #### **`Tomcat verzió: 9.0.33`**
