@@ -1,0 +1,9 @@
+<%@page language="java" contentType="text/html; charset=UTF-8"
+        pageEncoding="UTF-8" %>
+<header class="container-fluid">
+
+    <nav>
+        <a href="/pages/filmek.jsp"><img src="/images/index.png" id="index" alt="Film összehasonlító"/></a>
+    </nav>
+
+</header>

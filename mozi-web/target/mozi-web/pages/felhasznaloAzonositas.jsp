@@ -2,25 +2,43 @@
 <%@page language="java" contentType="text/html; charset=UTF-8"
         pageEncoding="UTF-8" %>
 <html>
-<head>
-    <link rel="stylesheet" href="../css/alap.css" />
-    <link rel="stylesheet" href="../css/azonosit.css" />
-    <title>Azonosítás</title>
-</head>
+<%@ include file="fragments/head.jspf" %>
 <body>
-<header>
-    <a href="/pages/filmek.jsp"><img src="/images/index.png" id="index" alt="Film összehasonlító"/></a>
-</header>
+<link rel="stylesheet" href="../css/azonosit.css" />
+<%@ include file="./fragments/header.jspf" %>
 
-    <div id="formdiv">
-
-        <h3>Adj meg egy nevet amire foglalod a jegyet és egy azonosítót aminvel késöbb azonosítod magad a jegy módosítáásához vagy lemondásához.</h3>
-        <form action="/azonositas" method="post">
-            <input class="input" minlength="3" name="nev" type="text" onkeyup="btnActivation()" placeholder="Név" required />
-            <input class="input" minlength="3" name="azonositokod" type="password" placeholder="Azonosítókód" required />
-            <input class="gomb" type="submit" value="Tovább a foglaláshoz" />
-        </form>
+<section class="container-fluid">
+    <div class="container-md">
+        <div class="row">
+            <div class="col-12">
+                <h3>Adj meg egy nevet amire foglalod a jegyet és egy azonosítót aminvel késöbb azonosítod magad a jegy módosítáásához vagy lemondásához.</h3>
+            </div>
+        </div>
     </div>
+
+    <div class="container login">
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <form action="/azonositas" method="post" autocomplete="off">
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="nev" minlength="3" placeholder="Név" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" name="azonositokod" placeholder="Azonosítókód" minlength="3" required>
+                            </div>
+                            <button type="submit" id="sendlogin" class="btn btn-primary">Tovább a foglaláshoz</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+</section>
 
 </body>
 </html>

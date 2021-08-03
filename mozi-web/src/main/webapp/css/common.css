@@ -1,0 +1,10 @@
+body{
+    background-color: #555555;
+}
+br.clear{
+    clear:both;
+}
+img#index{
+    height: 80px;
+    width: auto;
+}

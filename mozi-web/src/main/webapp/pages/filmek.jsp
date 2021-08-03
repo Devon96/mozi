@@ -2,32 +2,69 @@
 <%@page language="java" contentType="text/html; charset=UTF-8"
         pageEncoding="UTF-8" %>
 <html>
-<head>
-    <title>Vetített filmek</title>
-    <link rel="stylesheet" href="../css/alap.css" />
-    <link rel="stylesheet" href="../css/filmek.css" />
-</head>
+
+<%@ include file="./fragments/head.jspf" %>
+
 <body>
+<link rel="stylesheet" href="../css/filmek.css" />
 <jsp:include page="../FilmekController"/>
-<header>
-    <a href="/pages/filmek.jsp"><img src="/images/index.png" id="index" alt="Film összehasonlító"/></a>
-</header>
-<h1>Vetitett filmek</h1>
+<%@ include file="./fragments/header.jspf" %>
 
-<form method="post" action="/pages/filmek.jsp">
-    <input id="kereso" name="kulcsszo" type="text" placeholder="Filmcímrészlet" />
-    <input class="gomb" type="submit" value="Keresés" />
-</form>
-
-
-<c:forEach var="item" items="${requestScope.filmList}">
-    <div class="elem">
-        <a href="../Filmleiras?filmId=${item.id}">
-            <img src="data:image/jpeg;base64,${item.kep}" />
-            <div class="cim">${item.cim}</div>
-        </a>
+<section class="container-fluid">
+    <div class="container-lg">
+        <h1>Vetitett filmek</h1>
     </div>
-</c:forEach>
-<br class="clear" />
+</section>
+
+<section class="container-fluid">
+    <div class="container-lg">
+        <form method="post" action="/pages/filmek.jsp">
+            <div class="row">
+                <div class="col-8">
+                    <input class="form-control" name="kulcsszo" type="text" placeholder="Filmcímrészlet" />
+                </div>
+                <div class="col-4">
+                    <input class="btn btn-primary" type="submit" value="Keresés" />
+                </div>
+
+            </div>
+        </form>
+    </div>
+</section>
+
+<section>
+
+    <div class="container-fluid">
+
+        <div class="row">
+
+            <c:forEach var="item" items="${requestScope.filmList}" >
+
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 col-xl-1 movie">
+
+                    <div class="card">
+
+                        <a class="movie" href="../Filmleiras?filmId=${item.id}">
+
+                            <img class="card-img-top" src="data:image/jpeg;base64,${item.kep}" alt="Card image cap">
+                            <div class="card-body title p-2">
+                                ${item.cim}
+                            </div>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </c:forEach>
+
+        </div>
+
+    </div>
+
+</section>
+
+<script src="/bootstrap-5.0.2-dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
 </body>
 </html>

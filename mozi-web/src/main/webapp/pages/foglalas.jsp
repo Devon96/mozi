@@ -4,17 +4,11 @@
 <%@ page import="hu.alkfejl.model.bean.Foglalas" %>
 <%@ page import="java.util.ArrayList" %>
 <html>
-<head>
-    <title>Foglálás</title>
-    <link rel="stylesheet" href="../css/alap.css" />
-    <link rel="stylesheet" href="../css/foglalas.css" />
-</head>
+<%@ include file="fragments/head.jspf" %>
 <body>
+<link rel="stylesheet" href="../css/foglalas.css" />
 <jsp:include page="../FoglalasController"/>
-
-<header>
-    <a href="/pages/filmek.jsp"><img src="/images/index.png" id="index" alt="Film összehasonlító"/></a>
-</header>
+<%@ include file="./fragments/header.jspf" %>
 
 <main>
     <h1>Név: ${sessionScope.foglalas.nev}</h1>
@@ -52,12 +46,11 @@
             out.print("<br class='clear' />");
         }
     %>
-    </div>
+</div>
 <br class="clear"/>
     <table>
         <tr>
             <td>Szabad: </td><td><div style="width:50px;height:50px;" class="szek"></div></td>
-
         </tr>
         <tr>
             <td>Általad foglalt: </td><td><div style="width:50px;height:50px;" class="UserFoglaltSzek"></div></td>
@@ -66,21 +59,35 @@
             <td>Foglalt: </td><td><div style="width:50px;height:50px;" class="foglaltSzek"></div></td>
         </tr>
     </table>
+
     <h1>Foglalásaid szerkesztése és törlése:</h1>
+
     <div>
         <div>
             <h4>A foglalás a vetítés elötti 24 órában már nem törölhető!</h4>
-            <div class="elem"><div class="sor">Sor:</div><div class="oszlop">Oszlop:</div><div class="modosit"></div><div class="torol"></div><br class="clear" /></div>
-            <c:forEach var="item" items="${requestScope.foglalasai}">
-                <div class="elem">
-                <form method="post" action="/UpdateFoglalas?id=${item.id}">
-                    <div class="sor"><input name="sor" type="number" min="1" max="${requestScope.terem.sor}" value="${item.sor}" /></div>
-                    <div class="oszlop"><input name="oszlop" type="number" min="1" max="${requestScope.terem.oszlop}" value="${item.oszlop}" /></div>
-                    <input type="submit" value="Módosít" name="submit" />
 
-                    <c:if test="${torolheto == true}"><a href="../DeleteFoglalas?id=${item.id}"><div class="torol">Töröl:</div></a></c:if>
-                <br class="clear" />
-                </form>
+            <div class="container-md">
+                <div class="row">
+
+                    <div class="col-3 headtext">Sor:</div>
+                    <div class="col-3 headtext">Oszlop:</div>
+
+                </div>
+            </div>
+            <c:forEach var="item" items="${requestScope.foglalasai}">
+                <div class="container-md">
+
+                    <form method="post" action="/UpdateFoglalas?id=${item.id}">
+                        <div class="row">
+
+                            <div class="col-3"><input class="form-control" name="sor" type="number" min="1" max="${requestScope.terem.sor}" value="${item.sor}" /></div>
+                            <div class="col-3"><input class="form-control" name="oszlop" type="number" min="1" max="${requestScope.terem.oszlop}" value="${item.oszlop}" /></div>
+                            <div class="col-3"><input class="btn btn-info mybtn" type="submit" value="Módosít" name="submit" /></div>
+                            <div class="col-3"><c:if test="${torolheto == true}"><a class="delete btn btn-danger mybtn" href="../DeleteFoglalas?id=${item.id}">Töröl:</a></c:if></div>
+
+                        </div>
+                    </form>
+
             </div>
             </c:forEach>
         </div>
